@@ -1,0 +1,70 @@
+PASS Generate local H.264 MP4 fixture
+PASS Fixture contains a native AAC audio track
+PASS Prepare a native H.264 player asynchronously
+PASS Read video dimensions
+PASS Read video duration in seconds
+PASS Build video information metadata
+PASS Playback time advances
+PASS Pause stops playback time
+PASS Seek accurately while paused
+PASS Repeated seeks settle on the latest requested time
+PASS Relative seeking retains paused state
+PASS Seeking does not silently resume paused playback
+PASS Toggle resumes playback
+PASS End of video emits one completion and pauses
+PASS Playing an ended video restarts from its beginning
+PASS Seeking from the end and immediately playing preserves the pending middle seek
+PASS Seeking to the last frame while paused does not unexpectedly replay
+PASS Disposal immediately stops video and its audio clock
+PASS Disposal removes periodic UI callbacks
+PASS Apply preferred track transform to portrait dimensions
+PASS Opening an image discovers a mixed image/video folder in natural order
+PASS Mixed media preserves filename order
+PASS Media playback controls stay disabled while video is being prepared
+PASS P during video preparation does not start a slideshow or premature playback
+PASS Real thumbnail down/up opens video and displays its first frame without closing
+PASS Video uses a live player layer rather than a decoded still image
+PASS Video removes the welcome button
+PASS Video retains the translucent glass background
+PASS Video exposes a seek slider and playback time
+PASS Slideshow, media play/pause, and media stop have distinct actions
+PASS Media transport sits above the thumbnail strip without overlap
+PASS Real media play click starts only the current video
+PASS Real media pause click pauses without starting a slideshow
+PASS Real seek-slider mouse down/up changes the current playback time
+PASS Real media stop click pauses and returns to zero
+PASS The independent slideshow button starts continuous playback
+PASS Media pause preserves the independent slideshow setting
+PASS Media stop rewinds while preserving the independent slideshow setting
+PASS The slideshow button stops continuous playback without changing the file
+PASS Video 100% uses physical source pixels
+PASS Video zooms beyond 100% with the existing canvas controls
+PASS Real drag pans the enlarged video without closing it
+PASS Video continues playing during a canvas drag
+PASS Existing rotation transforms the video display
+PASS Fit and reverse rotation restore video geometry
+PASS Playback continues while zoom animations run
+PASS Space keeps the existing background-cycle interaction
+PASS P plays the selected video
+PASS P pauses the selected video
+PASS Seek slider updates the native player
+PASS Mute control updates the player
+PASS Information panel opens on video
+PASS Real video-metadata text click does not close the viewer
+PASS Real thumbnail click switches to a portrait video after metadata selection
+PASS Portrait viewer uses the oriented dimensions
+PASS Switching video stops the previous player's audio immediately
+PASS Rapid mixed-media switching settles on the final requested video
+PASS Rapid switching leaves no old player or audio clock running
+PASS Video-to-image switch restores the image canvas
+PASS Switching back to an image stops video playback
+PASS Clicking a video thumbnail in hidden chrome reveals it before routing events
+PASS Closing stops video immediately before the window fade finishes
+PASS Video close finishes its transition
+PASS Reopening after video close creates a functional player
+PASS Left arrow preserves previous-file navigation for video
+PASS Option-right seeks inside video without changing the selected file
+PASS A corrupt movie produces a recoverable error instead of crashing
+PASS Image viewing recovers after a corrupt movie
+
+68 passed, 0 failed

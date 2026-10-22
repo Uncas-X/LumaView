@@ -1,0 +1,40 @@
+ok 1: folder scan collects all 443 generated images
+ok 2: fixture order matches file navigation order
+ok 3: initial 12 thumbnails decode and draw their actual image colors
+INFO: complete visited ranges after initial range: 36/36; thumbnail requests: 438
+ok 4: all ranges remain populated after browsing beyond both cache limits
+ok 5: last visible range fully populates after browsing 443 files
+INFO: stationary frames with every image: 30/30; repeated thumbnail requests: 0
+ok 6: all 12 thumbnail cells remain visible in every stationary frame
+ok 7: a stationary strip does not enter a thumbnail reload/redraw loop
+ok 8: visible thumbnails never disappear when optional caches are reclaimed
+ok 9: cache reclamation does not repeatedly decode the visible thumbnails
+ok 10: jump to file 13 restores every visible thumbnail
+ok 11: jump to file 230 restores every visible thumbnail
+ok 12: jump to file 442 restores every visible thumbnail
+ok 13: jump to file 0 restores every visible thumbnail
+ok 14: jump to file 128 restores every visible thumbnail
+ok 15: jump to file 300 restores every visible thumbnail
+ok 16: rapid navigation settles to the correct visible images
+ok 17: settled range survives later offscreen completions
+ok 18: settled range survives later offscreen completions
+ok 19: settled range survives later offscreen completions
+ok 20: settled range survives later offscreen completions
+ok 21: settled range survives later offscreen completions
+ok 22: later completions do not force visible thumbnails to reload
+ok 23: each visible file starts exactly one thumbnail request
+ok 24: redrawing while thumbnails are pending never duplicates requests
+ok 25: reopening a folder creates a new set of requests
+ok 26: reopening a folder cancels every previous request
+ok 27: callbacks from the previous folder cannot paint stale thumbnails
+ok 28: old folder callbacks cannot clear the new generation's pending state
+ok 29: current folder callbacks display the new thumbnails
+ok 30: jumping away cancels slow offscreen thumbnail requests
+ok 31: current visible requests remain active after an offscreen cancellation
+ok 32: offscreen completions do not redraw the currently visible strip
+ok 33: rightmost visible thumbnail survives late offscreen results
+ok 34: completing offscreen work does not resubmit visible thumbnail requests
+ok 35: clearing a folder cancels all its outstanding thumbnail requests
+ok 36: cleared folders ignore callbacks without scheduling another redraw
+ok 37: cleared folders leave no new thumbnail work
+PASS: 37 thumbnail cache / navigation / callback / rendering checks

@@ -1,0 +1,2 @@
+Generated 112 codec combinations, 128 layer-alpha cases, one large PSB and 13 invalid cases
+PASS: 712 Photoshop composite checks; 112 codec combinations and 128 layer-alpha cases

@@ -1,0 +1,12 @@
+* text=auto
+*.swift text eol=lf
+*.sh text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.plist text eol=lf
+*.icns binary
+*.xz binary
+Resources/MediaTools/ffmpeg binary
+Resources/MediaTools/ffprobe binary
+Resources/DocumentTools/gs binary

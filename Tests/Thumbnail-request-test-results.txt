@@ -1,0 +1,14 @@
+PASS ticket cancellation is idempotent, late handlers run, delivery is suppressed
+PASS completion is once-only and permits reentrant cancellation
+PASS real raster thumbnail completes on main with an unretained ticket
+PASS cancelled cache-hit delivery never reaches consumer
+PASS native video: 40 cancelled requests release queue for visible raster
+PASS native video: cancellation suppresses all stale callbacks
+PASS native video: independent same-URL request survives
+PASS compatibility video: 40 cancelled requests release queue for visible raster
+PASS compatibility video: cancellation suppresses all stale callbacks
+PASS compatibility video: independent same-URL request survives
+PASS native audio: 40 cancelled requests release queue for visible raster
+PASS native audio: cancellation suppresses all stale callbacks
+PASS native audio: independent same-URL request survives
+13 thumbnail request cancellation checks passed

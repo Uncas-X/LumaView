@@ -1,0 +1,2 @@
+PASS svg size=(1000000.0, 1000000.0) fitZoom=0.00055 fitTilesHidden=true fitTileDraws=0 preview=2048×2048 LOD=27 bias=6 manualZoom=0.0005555 isFit=false hidden=false opacity=1.0 bounds=(0.0, 0.0, 1000000.0, 1000000.0) tileDraws=16 maxTileBytes=1048576 contextScales=["0.001953000"]
+PASS pdf size=(1000000.0, 1000000.0) fitZoom=0.00055 fitTilesHidden=true fitTileDraws=0 preview=2048×2048 LOD=27 bias=6 manualZoom=0.0005555 isFit=false hidden=false opacity=1.0 bounds=(0.0, 0.0, 1000000.0, 1000000.0) tileDraws=16 maxTileBytes=1048576 contextScales=["0.001953000"]

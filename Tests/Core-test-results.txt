@@ -1,0 +1,4 @@
+PASS: native HEIC encode/decode
+PASS: native TIFF encode/decode
+PASS: native BMP encode/decode
+PASS: 78 image library / loading checks

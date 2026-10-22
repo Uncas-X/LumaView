@@ -1,0 +1,30 @@
+PASS Native canvas right-click menu exposes image copy, Open With and Finder actions
+PASS Control-click follows the same canvas context-menu path
+PASS Context-menu opening preserves zoom, rotation, current file and viewer lifetime
+PASS Image copy dispatches through native menu target/action
+PASS Copied image retains complete native pixels and visible quarter-turn despite zoom
+PASS Copied image preserves transparent pixels without checkerboard, backdrop or controls
+PASS Private pasteboard publishes both PNG and TIFF image representations
+PASS Open With deduplicates applications and omits LumaView itself
+PASS Open With also offers an application chooser
+PASS Finder action retains file from the menu snapshot without launching Finder in tests
+PASS Open With retains menu file and selected application through a later selection change
+PASS Stale image menu cannot overwrite clipboard after switching files
+PASS An in-flight old copy is discarded before the new selection publishes exactly one image
+PASS Right-click on an embedded PDF image offers image and page as distinct copy actions
+PASS Text-only PDF region does not masquerade as an embedded image
+PASS PDF embedded image copies original image pixels rather than a screenshot of the page
+PASS Canvas PDF hit testing accounts for displayed rotation and zoom
+PASS Embedded PDF image copy follows the visible page quarter-turn
+PASS Copy current page produces a complete high-resolution rotated page independently from embedded-image copy
+PASS Page change invalidates an earlier PDF image menu
+PASS Audio context menu never offers fake video-frame or cover-image copying
+PASS Audio retains Open With and Finder actions
+PASS Video has a dedicated copy-current-frame menu action
+PASS Video menu copies the red frame visible when menu opened, despite later blue playback time
+PASS Video clipboard image includes view rotation at original video resolution
+PASS Context-menu frame copy does not alter pause or playback position (playing=false, rate=0.0, time=1.25)
+PASS Closing during video copy prevents a late clipboard replacement
+PASS Copy completion feedback is delivered through context action message callback
+
+28 passed, 0 failed

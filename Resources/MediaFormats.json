@@ -1,0 +1,671 @@
+[
+  {
+    "category": "image",
+    "id": "jpeg",
+    "title": "JPEG",
+    "extensions": [
+      "jpg",
+      "jpeg",
+      "jpe",
+      "jfif"
+    ]
+  },
+  {
+    "category": "image",
+    "id": "png",
+    "title": "PNG / APNG",
+    "extensions": [
+      "png",
+      "apng"
+    ]
+  },
+  {
+    "category": "image",
+    "id": "gif",
+    "title": "GIF",
+    "extensions": [
+      "gif"
+    ]
+  },
+  {
+    "category": "image",
+    "id": "tiff",
+    "title": "TIFF",
+    "extensions": [
+      "tif",
+      "tiff"
+    ]
+  },
+  {
+    "category": "image",
+    "id": "bmp",
+    "title": "BMP",
+    "extensions": [
+      "bmp",
+      "dib"
+    ]
+  },
+  {
+    "category": "image",
+    "id": "heif",
+    "title": "HEIF / HEIC",
+    "extensions": [
+      "heic",
+      "heif",
+      "hif",
+      "heics"
+    ]
+  },
+  {
+    "category": "image",
+    "id": "webp",
+    "title": "WebP",
+    "extensions": [
+      "webp"
+    ]
+  },
+  {
+    "category": "image",
+    "id": "avif",
+    "title": "AVIF",
+    "extensions": [
+      "avif"
+    ]
+  },
+  {
+    "category": "image",
+    "id": "jxl",
+    "title": "JPEG XL",
+    "extensions": [
+      "jxl"
+    ]
+  },
+  {
+    "category": "image",
+    "id": "jp2",
+    "title": "JPEG 2000",
+    "extensions": [
+      "jp2",
+      "j2k",
+      "jpf",
+      "jpx",
+      "j2c"
+    ]
+  },
+  {
+    "category": "image",
+    "id": "icons",
+    "title": "图标",
+    "extensions": [
+      "ico",
+      "cur",
+      "icns"
+    ]
+  },
+  {
+    "category": "image",
+    "id": "psd",
+    "title": "Photoshop (PSD / PSB)",
+    "extensions": [
+      "psd",
+      "psb"
+    ]
+  },
+  {
+    "category": "image",
+    "id": "tga",
+    "title": "Targa",
+    "extensions": [
+      "tga"
+    ]
+  },
+  {
+    "category": "image",
+    "id": "hdr",
+    "title": "HDR / OpenEXR",
+    "extensions": [
+      "hdr",
+      "exr"
+    ]
+  },
+  {
+    "category": "image",
+    "id": "pnm",
+    "title": "Netpbm",
+    "extensions": [
+      "pbm",
+      "pgm",
+      "ppm",
+      "pfm"
+    ]
+  },
+  {
+    "category": "image",
+    "id": "dng",
+    "title": "Adobe DNG",
+    "extensions": [
+      "dng"
+    ]
+  },
+  {
+    "category": "image",
+    "id": "canonraw",
+    "title": "Canon RAW",
+    "extensions": [
+      "cr2",
+      "cr3",
+      "crw"
+    ]
+  },
+  {
+    "category": "image",
+    "id": "nikonraw",
+    "title": "Nikon RAW",
+    "extensions": [
+      "nef",
+      "nrw"
+    ]
+  },
+  {
+    "category": "image",
+    "id": "sonyraw",
+    "title": "Sony RAW",
+    "extensions": [
+      "arw",
+      "sr2",
+      "srf"
+    ]
+  },
+  {
+    "category": "image",
+    "id": "otherraw",
+    "title": "其他相机 RAW",
+    "extensions": [
+      "orf",
+      "raf",
+      "rw2",
+      "pef",
+      "srw"
+    ]
+  },
+  {
+    "category": "vector",
+    "id": "svg",
+    "title": "SVG",
+    "extensions": [
+      "svg"
+    ]
+  },
+  {
+    "category": "vector",
+    "id": "pdf",
+    "title": "PDF",
+    "extensions": [
+      "pdf"
+    ]
+  },
+  {
+    "category": "vector",
+    "id": "ai",
+    "title": "Adobe Illustrator",
+    "extensions": [
+      "ai"
+    ]
+  },
+  {
+    "category": "vector",
+    "id": "eps",
+    "title": "EPS / PostScript",
+    "extensions": [
+      "eps",
+      "epsf",
+      "ps"
+    ]
+  },
+  {
+    "category": "video",
+    "id": "mp4",
+    "title": "MPEG-4",
+    "extensions": [
+      "mp4",
+      "m4v"
+    ]
+  },
+  {
+    "category": "video",
+    "id": "quicktime",
+    "title": "QuickTime",
+    "extensions": [
+      "mov",
+      "qt"
+    ]
+  },
+  {
+    "category": "video",
+    "id": "matroska",
+    "title": "Matroska",
+    "extensions": [
+      "mkv",
+      "mk3d"
+    ]
+  },
+  {
+    "category": "video",
+    "id": "webm",
+    "title": "WebM",
+    "extensions": [
+      "webm"
+    ]
+  },
+  {
+    "category": "video",
+    "id": "avi",
+    "title": "AVI",
+    "extensions": [
+      "avi",
+      "divx"
+    ]
+  },
+  {
+    "category": "video",
+    "id": "flash",
+    "title": "Flash Video",
+    "extensions": [
+      "flv",
+      "f4v"
+    ]
+  },
+  {
+    "category": "video",
+    "id": "windowsvideo",
+    "title": "Windows Media / ASF",
+    "extensions": [
+      "wmv",
+      "asf"
+    ]
+  },
+  {
+    "category": "video",
+    "id": "mpeg",
+    "title": "MPEG Video",
+    "extensions": [
+      "mpg",
+      "mpeg",
+      "mpe",
+      "m1v",
+      "m2v"
+    ]
+  },
+  {
+    "category": "video",
+    "id": "transport",
+    "title": "MPEG Transport Stream",
+    "extensions": [
+      "ts",
+      "mts",
+      "m2ts",
+      "m2t",
+      "m2p",
+      "trp"
+    ]
+  },
+  {
+    "category": "video",
+    "id": "3gp",
+    "title": "3GPP",
+    "extensions": [
+      "3gp",
+      "3gpp",
+      "3g2"
+    ]
+  },
+  {
+    "category": "video",
+    "id": "oggvideo",
+    "title": "Ogg Video",
+    "extensions": [
+      "ogv",
+      "ogm"
+    ]
+  },
+  {
+    "category": "video",
+    "id": "realvideo",
+    "title": "RealVideo",
+    "extensions": [
+      "rm",
+      "rmvb"
+    ]
+  },
+  {
+    "category": "video",
+    "id": "dvd",
+    "title": "DVD Video",
+    "extensions": [
+      "vob"
+    ]
+  },
+  {
+    "category": "video",
+    "id": "camcorder",
+    "title": "摄像机视频",
+    "extensions": [
+      "mod",
+      "tod"
+    ]
+  },
+  {
+    "category": "video",
+    "id": "mjpeg",
+    "title": "Motion JPEG",
+    "extensions": [
+      "mjpeg",
+      "mjpg",
+      "mj2"
+    ]
+  },
+  {
+    "category": "video",
+    "id": "mxf",
+    "title": "MXF",
+    "extensions": [
+      "mxf"
+    ]
+  },
+  {
+    "category": "video",
+    "id": "dv",
+    "title": "DV",
+    "extensions": [
+      "dv",
+      "dif"
+    ]
+  },
+  {
+    "category": "video",
+    "id": "nut",
+    "title": "NUT",
+    "extensions": [
+      "nut"
+    ]
+  },
+  {
+    "category": "video",
+    "id": "nsv",
+    "title": "Nullsoft Video",
+    "extensions": [
+      "nsv"
+    ]
+  },
+  {
+    "category": "video",
+    "id": "amv",
+    "title": "AMV",
+    "extensions": [
+      "amv"
+    ]
+  },
+  {
+    "category": "video",
+    "id": "bink",
+    "title": "Bink / Smacker",
+    "extensions": [
+      "bik",
+      "bk2",
+      "smk"
+    ]
+  },
+  {
+    "category": "video",
+    "id": "rawvideo",
+    "title": "视频码流",
+    "extensions": [
+      "h264",
+      "264",
+      "avc",
+      "h265",
+      "265",
+      "hevc",
+      "h266",
+      "vvc",
+      "ivf",
+      "y4m"
+    ]
+  },
+  {
+    "category": "audio",
+    "id": "mp3",
+    "title": "MP3 / MPEG Audio",
+    "extensions": [
+      "mp3",
+      "mp2",
+      "mp1",
+      "mpa"
+    ]
+  },
+  {
+    "category": "audio",
+    "id": "aac",
+    "title": "AAC",
+    "extensions": [
+      "aac",
+      "adts"
+    ]
+  },
+  {
+    "category": "audio",
+    "id": "appleaudio",
+    "title": "MPEG-4 Audio",
+    "extensions": [
+      "m4a",
+      "m4b",
+      "m4r",
+      "alac"
+    ]
+  },
+  {
+    "category": "audio",
+    "id": "wav",
+    "title": "WAVE",
+    "extensions": [
+      "wav",
+      "wave",
+      "bwf",
+      "rf64"
+    ]
+  },
+  {
+    "category": "audio",
+    "id": "aiff",
+    "title": "AIFF",
+    "extensions": [
+      "aif",
+      "aiff",
+      "aifc"
+    ]
+  },
+  {
+    "category": "audio",
+    "id": "caf",
+    "title": "Core Audio",
+    "extensions": [
+      "caf"
+    ]
+  },
+  {
+    "category": "audio",
+    "id": "flac",
+    "title": "FLAC",
+    "extensions": [
+      "flac"
+    ]
+  },
+  {
+    "category": "audio",
+    "id": "ogg",
+    "title": "Ogg / Vorbis",
+    "extensions": [
+      "ogg",
+      "oga"
+    ]
+  },
+  {
+    "category": "audio",
+    "id": "opus",
+    "title": "Opus",
+    "extensions": [
+      "opus"
+    ]
+  },
+  {
+    "category": "audio",
+    "id": "speex",
+    "title": "Speex",
+    "extensions": [
+      "spx",
+      "speex"
+    ]
+  },
+  {
+    "category": "audio",
+    "id": "ape",
+    "title": "Monkey’s Audio",
+    "extensions": [
+      "ape"
+    ]
+  },
+  {
+    "category": "audio",
+    "id": "wma",
+    "title": "Windows Media Audio",
+    "extensions": [
+      "wma"
+    ]
+  },
+  {
+    "category": "audio",
+    "id": "wavpack",
+    "title": "WavPack",
+    "extensions": [
+      "wv"
+    ]
+  },
+  {
+    "category": "audio",
+    "id": "tta",
+    "title": "True Audio",
+    "extensions": [
+      "tta"
+    ]
+  },
+  {
+    "category": "audio",
+    "id": "tak",
+    "title": "TAK",
+    "extensions": [
+      "tak"
+    ]
+  },
+  {
+    "category": "audio",
+    "id": "shorten",
+    "title": "Shorten",
+    "extensions": [
+      "shn"
+    ]
+  },
+  {
+    "category": "audio",
+    "id": "dolby",
+    "title": "Dolby Audio",
+    "extensions": [
+      "ac3",
+      "eac3",
+      "ec3",
+      "truehd",
+      "thd",
+      "mlp"
+    ]
+  },
+  {
+    "category": "audio",
+    "id": "dts",
+    "title": "DTS",
+    "extensions": [
+      "dts",
+      "dtshd"
+    ]
+  },
+  {
+    "category": "audio",
+    "id": "amr",
+    "title": "AMR",
+    "extensions": [
+      "amr",
+      "awb"
+    ]
+  },
+  {
+    "category": "audio",
+    "id": "sun",
+    "title": "AU / SND",
+    "extensions": [
+      "au",
+      "snd"
+    ]
+  },
+  {
+    "category": "audio",
+    "id": "realaudio",
+    "title": "RealAudio",
+    "extensions": [
+      "ra"
+    ]
+  },
+  {
+    "category": "audio",
+    "id": "dsd",
+    "title": "DSD",
+    "extensions": [
+      "dsf",
+      "dff",
+      "dsd"
+    ]
+  },
+  {
+    "category": "audio",
+    "id": "matroskaaudio",
+    "title": "Matroska Audio",
+    "extensions": [
+      "mka"
+    ]
+  },
+  {
+    "category": "audio",
+    "id": "musepack",
+    "title": "Musepack",
+    "extensions": [
+      "mpc",
+      "mpp",
+      "mp+"
+    ]
+  },
+  {
+    "category": "audio",
+    "id": "gsm",
+    "title": "GSM / QCP",
+    "extensions": [
+      "gsm",
+      "qcp"
+    ]
+  },
+  {
+    "category": "audio",
+    "id": "iffaudio",
+    "title": "IFF Audio",
+    "extensions": [
+      "8svx",
+      "16sv"
+    ]
+  }
+]

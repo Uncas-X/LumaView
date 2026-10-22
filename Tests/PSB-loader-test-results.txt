@@ -1,0 +1,30 @@
+Historical report: private sample filenames have been anonymized; measurements and results are unchanged.
+
+PASS: three supplied PSB files participate
+THUMBNAIL Sample-A.psb: 0.055336952209472656 s
+THUMBNAIL Sample-B.psb: 0.05541789531707764 s
+THUMBNAIL Sample-C.psb: 0.06004190444946289 s
+PASS: bounded queue completes all supplied thumbnails
+PASS: thumbnail callbacks stay on main thread
+PASS: every supplied PSB produces a nonempty thumbnail
+PASS: Sample-A.psb: thumbnail remains bounded
+PASS: Sample-A.psb: main preview completes
+PASS: Sample-A.psb: original geometry retained
+PASS: Sample-A.psb: main preview uses composite rather than embedded thumbnail
+PASS: Sample-A.psb: format metadata retained
+MAIN Sample-A.psb: 0.9029229879379272 s; 2582 x 3318
+PASS: Sample-B.psb: thumbnail remains bounded
+PASS: Sample-B.psb: main preview completes
+PASS: Sample-B.psb: original geometry retained
+PASS: Sample-B.psb: main preview uses composite rather than embedded thumbnail
+PASS: Sample-B.psb: format metadata retained
+MAIN Sample-B.psb: 0.6462229490280151 s; 2610 x 3307
+PASS: Sample-C.psb: thumbnail remains bounded
+PASS: Sample-C.psb: main preview completes
+PASS: Sample-C.psb: original geometry retained
+PASS: Sample-C.psb: main preview uses composite rather than embedded thumbnail
+PASS: Sample-C.psb: format metadata retained
+MAIN Sample-C.psb: 0.7435349225997925 s; 2843 x 3361
+PASS: cancelled cached PSB requests never reach the filmstrip
+PASS: all main preview callbacks stay on main thread
+PASS: 21 supplied PSB ImageLoader integration checks

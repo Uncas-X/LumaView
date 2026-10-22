@@ -1,0 +1,25 @@
+# macOS and editor state
+.DS_Store
+._*
+.idea/
+.vscode/
+*.swp
+*~
+
+# Local builds, generated fixtures, reports, and application bundles
+/.build/
+/work/
+/dist/
+*.app/
+*.dSYM/
+*.xcarchive/
+*.xcuserstate
+xcuserdata/
+
+# Local configuration and signing material
+.env
+.env.*
+!.env.example
+*.p12
+*.p8
+*.mobileprovision

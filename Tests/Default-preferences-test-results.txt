@@ -1,0 +1,35 @@
+PASS Opening preferences is unchecked and performs no writes
+PASS All catalog format families have selectable rows
+PASS Initial list scroll position shows the first image family
+PASS Extension search accepts a leading dot
+PASS Extension search filters the relevant format family
+PASS Checking a format enables Apply without writing defaults
+PASS Search changes retain selection
+PASS Clear selection disables Apply
+PASS Category Select All selects only video rows
+PASS Category Clear clears only its selected rows
+PASS Multiple selections still perform no association writes
+PASS Apply disables duplicate submission and selection edits
+PASS Mixed selected batch completes through the fake backend
+PASS Apply writes exactly the selected concrete format aliases once
+PASS Partial results remain visible in the preferences window
+PASS Per-format failure details are selectable and visible
+PASS Finished batch rereads successful and failed defaults instead of keeping an unverified draft
+PASS Closing preferences adds no association writes
+PASS New controller restores verified system defaults after reopening
+PASS Reopening and detecting persisted defaults add no association writes
+PASS Partial-state fixture contains multiple distinct type aliases
+PASS Returning to the application detects partial default associations as mixed
+PASS Partial row tooltip explains the exact number of associated aliases
+PASS Clicking a mixed row selects all its aliases in one action
+PASS Activation refresh updates untouched defaults while preserving an unapplied user draft
+PASS Unapplied choices are identified as drafts in row details
+PASS Clearing checked system defaults only clears the draft and never removes an association
+PASS Reopening discards unapplied clearing and restores actual complete and partial defaults
+PASS Global Select All is available while searching and makes no system changes
+PASS Global Select All includes every image, vector, video and audio format outside the search results
+PASS Batch application disables all selection controls
+PASS All-format fake association batch completes
+PASS Global selection applies every concrete catalog type exactly once and no abstract categories
+PASS Global batch readback keeps successful formats checked and leaves rejected SVG unchecked
+34 passed, 0 failed

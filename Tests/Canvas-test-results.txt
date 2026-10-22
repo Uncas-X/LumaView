@@ -1,0 +1,1 @@
+PASS: 66 canvas geometry / rendering / interaction checks

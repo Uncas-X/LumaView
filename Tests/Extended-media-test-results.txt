@@ -1,0 +1,58 @@
+PASS Integration uses bundled media tools without a development override
+PASS Bundled FFmpeg starts with the expected non-GPL build
+PASS Bundled ffprobe recognizes the H264 fixture
+PASS Bundled H264 conversion preserves audio/video classification
+PASS H.264 MKV uses a lossless container remux
+PASS Bundled H264 output prepares for native playback
+PASS Bundled ffprobe recognizes the FFV1 fixture
+PASS Bundled FFV1 conversion preserves audio/video classification
+PASS Bundled FFV1 output prepares for native playback
+PASS Bundled ffprobe recognizes the VP9 fixture
+PASS Bundled VP9 conversion preserves audio/video classification
+PASS Bundled VP9 output prepares for native playback
+PASS Bundled ffprobe recognizes the AV1 fixture
+PASS Bundled AV1 conversion preserves audio/video classification
+PASS Bundled AV1 output prepares for native playback
+PASS Bundled ffprobe recognizes the OPUS fixture
+PASS Bundled OPUS conversion preserves audio/video classification
+PASS Bundled OPUS output prepares for native playback
+PASS Completed output exceeding 8 GB is rejected even without progress ticks
+PASS Rejected oversized conversion leaves no cache or partial output
+PASS Native video is ready before exercising the first-frame retry path
+PASS First-frame retry detaches the old layer and disables unprepared controls
+PASS First-frame retry reuses the session with a fresh ready player layer
+PASS A first-frame failure forces re-encoding instead of copying the same unsupported bitstream
+PASS Native AAC audio opens with a visible audio card
+PASS Audio playback uses the card without a waiting video layer
+PASS Folder scan includes images, videos, and audio together
+PASS Real audio play click advances time without starting slideshow
+PASS Real audio pause click stops the player
+PASS Real audio stop click pauses and rewinds to zero
+PASS Audio supports the separate continuous-playback action
+PASS Audio pause does not change the slideshow setting
+PASS Audio stop does not change the slideshow setting
+PASS Audio transport remains above the thumbnail strip
+PASS Audio information panel opens
+PASS Audio information identifies its type and duration
+PASS Selecting audio metadata text keeps the viewer open
+PASS Real thumbnail click switches from audio to an image
+PASS Audio-to-image switch stops the old audio and hides transport controls
+PASS Real thumbnail click opens 04-remux.mkv through the viewer
+PASS Viewer retains the original URL and full duration for 04-remux.mkv
+PASS Decoded 04-remux.mkv reaches a real AVPlayerLayer frame
+PASS Real thumbnail click opens 05-ffv1.avi through the viewer
+PASS Viewer retains the original URL and full duration for 05-ffv1.avi
+PASS Decoded 05-ffv1.avi reaches a real AVPlayerLayer frame
+PASS Real thumbnail click opens 06-vp9.webm through the viewer
+PASS Viewer retains the original URL and full duration for 06-vp9.webm
+PASS Decoded 06-vp9.webm reaches a real AVPlayerLayer frame
+PASS Real thumbnail click opens 07-av1.mkv through the viewer
+PASS Viewer retains the original URL and full duration for 07-av1.mkv
+PASS Decoded 07-av1.mkv reaches a real AVPlayerLayer frame
+PASS Real thumbnail click opens 08-opus.ogg through the viewer
+PASS Viewer retains the original URL and full duration for 08-opus.ogg
+PASS OGG/Opus opens as playable audio
+PASS Closing compatible media stops playback and finishes the window transition
+
+55 passed, 0 failed
+ffmpeg version 9.0.2 Copyright (c) 2000-2026 the FFmpeg developers

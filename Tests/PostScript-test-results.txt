@@ -1,0 +1,26 @@
+PASS EPS crop preserves nonzero bounding box
+PASS EPS output retains paths and text without whole-page rasterization
+PASS unchanged source reuses completed cache
+PASS main canvas receives original vector page representation
+PASS large zoom redraws vector geometry
+PASS filmstrip uses full PostScript drawing
+PASS same-path changed source invalidates cache
+PASS PostScript multiple pages use existing page navigation
+PASS PostScript page geometry remains intact
+PASS legacy PostScript Illustrator file receives vector preview
+PASS malformed DOS EPS offsets rejected
+PASS interpreter error never publishes invalid cache
+PASS infinite PostScript bounded by interpreter timeout
+PASS file switching promptly cancels its interpreter
+PASS cancelled and failed jobs clean private scratch directories
+PASS PostScript read outside allowlist is denied
+PASS PostScript write outside allowlist is denied
+PASS PostScript pipe outside allowlist is denied
+PASS interpreter leaves external files unchanged
+PASS shared main/thumbnail consumers deduplicate without cross-cancellation
+PASS concurrent requests publish exactly one completed cache file
+PASS user EPS retains actual vector paths and text
+PASS user EPS uses vector source instead of embedded TIFF
+PASS user original bytes remain unchanged
+EPS operators: paths=147521, text=59, images=160
+24 PostScript checks passed.

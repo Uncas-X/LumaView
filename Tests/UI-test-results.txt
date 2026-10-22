@@ -1,0 +1,67 @@
+PASS Format-selection preferences are available from the app menu before opening media
+PASS Render 01-welcome.png
+PASS Open selected image asynchronously
+PASS Expand folder with natural order and selected file
+PASS Decode original portrait resolution
+PASS Initially fit image
+PASS 100% actual physical pixels
+PASS Zoom beyond 100%
+PASS Restore fit
+PASS Picasa Ctrl+R rotation
+PASS Reverse rotation
+PASS Retain previous visible image while next image decodes
+PASS Keep previous image rotation until replacement is ready
+PASS Navigate next image
+PASS Apply replacement image and its saved rotation together
+PASS Navigate previous image
+PASS Remember display rotation per image
+PASS Viewing and rotation leave original bytes unchanged
+PASS Space cycles background
+PASS T hides filmstrip
+PASS End selects final image
+PASS Loop from last to first
+PASS No-loop stops at first
+PASS Rapid navigation settles on latest request
+PASS Stale image never replaces latest selection
+PASS Overlapping image transitions settle on the latest canvas image
+PASS Ready for slideshow
+PASS Non-loop slideshow advances and stops on final image
+PASS Escape pauses slideshow first
+PASS Real thumbnail mouse down/up selects the image without closing
+PASS Real filename text click does not close the viewer
+PASS Real information button click opens the panel without closing
+PASS Real information title click does not close the viewer
+PASS Real metadata text click does not close the viewer
+PASS Real information-panel padding click stays inside the panel
+PASS Real information close button hides only the panel
+PASS Real dock-padding mouse down/up does not close the viewer
+PASS Welcome open button leaves the view hierarchy while viewing images
+PASS Load landscape for preview
+PASS Render 02-viewer.png
+PASS Smallest 1% view retains its requested zoom
+PASS Dark viewing background is fully opaque
+PASS Render 05-small-1-percent.png
+PASS Render 03-information.png
+PASS Translucent mode installs a full-window behind-window glass backdrop
+PASS Render 04-transparent.png
+PASS Dark mode hides the glass backdrop and restores an opaque canvas
+PASS Corrupt image shows recoverable error
+PASS Continue viewing after corrupt image
+PASS Complete native macOS fullscreen entry
+PASS Escape completes native fullscreen exit
+PASS Showing during close cancels the stale fade completion
+PASS Interrupted close restores mouse input and keyboard focus
+PASS Showing during a pending-load close restarts the selected decode
+PASS Close keeps the window visible while fading when Reduce Motion is off
+PASS Close finishes its fade and then hides the window
+PASS Showing after completed close restores the retained static image without relying on an animation timer
+PASS Opening after completed close restores a functional viewer
+PASS Keyboard navigation works after reopening
+PASS Open an eighteen-image folder for filmstrip scrolling regressions
+PASS Repeated real clicks follow recentered thumbnails across eighteen images
+PASS Real thumbnail clicks remain safe after metadata text selection owns focus
+PASS Real thumbnail click reveals hidden chrome before routing mouse events
+PASS Real thumbnail click reveals transparent chrome before routing mouse events
+PASS Real thumbnail click reveals mouse-move chrome before routing mouse events
+
+65 passed, 0 failed

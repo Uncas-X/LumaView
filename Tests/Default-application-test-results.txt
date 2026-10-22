@@ -1,0 +1,102 @@
+  PASS macOS image type metadata is available
+  PASS supported image catalog is nonempty
+  PASS catalog deduplicates UTI identifiers
+  PASS catalog order is stable
+  PASS catalog contains concrete image types rather than abstract categories
+  PASS catalog excludes PDF and video
+  PASS image conformance alone does not include unsupported SVG
+  PASS catalog includes decoded format public.jpeg
+  PASS catalog includes decoded format public.png
+  PASS catalog includes decoded format public.heic
+  PASS catalog includes decoded format public.heif
+  PASS catalog includes decoded format public.heics
+  PASS catalog includes decoded format com.compuserve.gif
+  PASS catalog includes decoded format public.tiff
+  PASS catalog includes decoded format com.microsoft.bmp
+  PASS catalog includes decoded format org.webmproject.webp
+  PASS catalog includes decoded format com.apple.icns
+  PASS catalog includes decoded format com.microsoft.ico
+  PASS catalog includes decoded format com.adobe.raw-image
+  PASS catalog includes decoded format com.canon.cr2-raw-image
+  PASS catalog includes decoded format com.canon.cr3-raw-image
+  PASS catalog includes decoded format com.nikon.raw-image
+  PASS catalog includes decoded format com.sony.arw-raw-image
+  PASS catalog includes decoded format com.fuji.raw-image
+  PASS catalog includes decoded format com.olympus.raw-image
+  PASS catalog includes decoded format com.panasonic.rw2-raw-image
+  PASS APNG extension's distinct system type is included
+  PASS CUR extension's distinct system type is included
+  PASS all accepted associations are verified and counted
+  PASS successful outcome has no cancellation or failures
+  PASS every requested image type reaches the injected backend once
+  PASS every successful setter is checked by reading back
+  PASS progress counts completed types monotonically
+  PASS progress provides a visible format name
+  PASS synchronous backend callbacks produce one main-thread completion
+  PASS explicit requests deduplicate images and filter nondecodable or abstract types
+  PASS filtered requests cannot write PDF, video, broad image categories or unsupported SVG
+  PASS one system rejection does not stop other image formats
+  PASS partial failure identifies the affected format
+  PASS partial failure includes a user-visible reason
+  PASS failed types still contribute to progress
+  PASS successful setter callbacks cannot hide unchanged or missing readbacks
+  PASS both unchanged and missing defaults are reported as unverified
+  PASS old and current test applications deliberately share a bundle identifier
+  PASS an old app copy with the same bundle ID is not accepted as the requested current app
+  PASS a symlink to the exact requested app resolves as the same application
+  PASS association requests run sequentially
+  PASS cancel waits for the in-flight system callback
+  PASS cancel reports the two not-started formats
+  PASS the completed in-flight change is still verified after cancellation
+  PASS cancel starts no later setters and completes exactly once
+  PASS cancellation requested inside progress prevents the next association
+  PASS an entirely filtered request performs no association writes
+  PASS an empty request still completes once
+  PASS video catalog retains canonical MP4/MOV/M4V and matches the explicit format catalog
+  PASS the existing image catalog remains separate from video types
+  PASS default start still associates images only and never writes video defaults
+  PASS even explicitly supplied video types cannot enter an image operation
+  PASS video opt-in writes only explicitly supported concrete video formats
+  PASS video operation retains sequential progress and one completion
+  PASS video requests deduplicate and exclude images, PDF, audio and abstract video categories
+  PASS a video request without eligible concrete formats performs no writes
+  PASS video operation distinguishes an accepted default from rejection and unchanged readback
+  PASS video failures identify both rejected and unverified formats
+  PASS video failures do not interrupt subsequent formats or leave the main-thread callback contract
+  PASS video cancel waits for the in-flight request without queuing another
+  PASS video cancellation verifies the in-flight change and counts all remaining formats as cancelled
+  PASS cancelled video operation completes exactly once and starts no further writes
+  PASS unified association catalog contains unique concrete types
+  PASS unified selection accepts exactly the shared format catalog
+  PASS unified catalog contains neither abstract supertypes nor dynamic guesses
+  PASS audio types are available as an explicit selectable category
+  PASS PDF and SVG are available only through the explicit vector category
+  PASS legacy image-only operations do not silently expand to vector/document associations
+  PASS explicit imported formats can be associated without using broad category defaults
+  PASS mixed fixture includes image, vector, video and audio families
+  PASS constructing the service never writes file associations
+  PASS one selected batch applies concrete formats across all four categories
+  PASS selected batches deduplicate aliases and never write unselected or unsupported types
+  PASS unified batches preserve the single main-thread completion contract
+  PASS selected mixed-format progress counts each concrete association once
+  PASS mixed selection reports partial success without aborting remaining categories
+  PASS mixed failures identify rejected and unchanged formats precisely
+  PASS partial results supply readable per-format details for the preferences window
+  PASS stopping a mixed batch waits for its in-flight system request
+  PASS stopping keeps verified completed changes and reports unprocessed choices
+  PASS a cancelled preferences batch never writes its remaining selections
+  PASS empty, abstract and out-of-catalog selections produce useful errors
+  PASS invalid selection performs no association writes
+  PASS selected associations reject invalid application URL file
+  PASS selected associations reject invalid application URL https
+  PASS repeated Apply cannot overlap or replace the active association batch
+  PASS rejecting a duplicate batch leaves original progress and cancellation intact
+  PASS system snapshot recognizes the current installation and its symlink
+  PASS a matching bundle ID at another path is distinguished as another copy
+  PASS another application named LumaView is not mistaken for this viewer
+  PASS a missing system association remains unknown rather than a remembered success
+  PASS read-only snapshots deduplicate concrete types and exclude broad system categories
+  PASS reading persisted associations never writes or accesses the backend off main
+  PASS a newly constructed service reads current system defaults instead of stale local choices
+  PASS refresh after external changes still performs no setter calls
+PASS: 101 default application checks (mock writes only)

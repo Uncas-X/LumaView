@@ -1,0 +1,45 @@
+READY ["旅途 01.jpg", "旅途 02.jpg", "旅途 10.jpg", "损坏.jpg"]
+BEFORE thumbnail hit Optional(main.Filmstrip) first Optional(main.PhotoCanvas) backgrounds 0
+CHAIN Filmstrip
+CHAIN NSView
+CHAIN SurfaceView
+CHAIN ViewerWindow
+CHAIN ViewerController
+BACKGROUND CALLBACK 1
+AFTER thumbnail index 1 first Optional(main.PhotoCanvas) backgrounds 1
+BEFORE info padding with canvas first responder hit Optional(NSView) first Optional(main.PhotoCanvas) backgrounds 1
+CHAIN NSView
+CHAIN SurfaceView
+CHAIN ViewerWindow
+CHAIN ViewerController
+AFTER info padding with canvas first responder index 1 first Optional(main.PhotoCanvas) backgrounds 1
+BEFORE file title with canvas first responder hit Optional(NSTextField) first Optional(main.PhotoCanvas) backgrounds 1
+CHAIN NSTextField
+CHAIN NSView
+CHAIN SurfaceView
+CHAIN ViewerWindow
+CHAIN ViewerController
+BACKGROUND CALLBACK 2
+AFTER file title with canvas first responder index 1 first Optional(main.PhotoCanvas) backgrounds 2
+BEFORE info text title hit Optional(NSTextField) first Optional(main.PhotoCanvas) backgrounds 2
+CHAIN NSTextField
+CHAIN NSView
+CHAIN SurfaceView
+CHAIN ViewerWindow
+CHAIN ViewerController
+AFTER info text title index 1 first Optional(NSTextView) backgrounds 2
+BEFORE info metadata hit Optional(NSTextView) first Optional(NSTextView) backgrounds 2
+CHAIN NSTextView
+CHAIN NSTextField
+CHAIN NSView
+CHAIN SurfaceView
+CHAIN ViewerWindow
+CHAIN ViewerController
+AFTER info metadata index 1 first Optional(NSTextView) backgrounds 2
+BEFORE info panel padding hit Optional(NSView) first Optional(NSTextView) backgrounds 2
+CHAIN NSView
+CHAIN SurfaceView
+CHAIN ViewerWindow
+CHAIN ViewerController
+AFTER info panel padding index 1 first Optional(NSTextView) backgrounds 2
+FINISHED background callbacks 2

@@ -1,0 +1,43 @@
+PASS: silence produces a zero envelope
+PASS: envelope combines stereo peaks without phase cancellation, clamps clipping and ignores invalid samples
+PASS: chunk boundaries preserve interleaved frame positions
+PASS: overview has a fixed maximum bin budget
+PASS: native waveform decodes the requested number of bins and original duration
+PASS: real WAV envelope preserves its quiet and loud halves
+PASS: decoded silent WAV is flat
+PASS: true sample envelope renders as the audio display image
+PASS: loading fallback remains available
+PASS: invalid cover bytes fail gracefully
+PASS: large embedded cover is decoded to a bounded 2048-pixel preview
+PASS: M4A embedded album art is not mistaken for a video track
+PASS: M4A audio session delivers its original embedded album cover
+PASS: M4A cover decoding preserves aspect ratio within the size budget
+PASS: MP3 embedded album art is not mistaken for a video track
+PASS: MP3 audio session delivers its original embedded album cover
+PASS: MP3 cover decoding preserves aspect ratio within the size budget
+PASS: FLAC embedded album art is not mistaken for a video track
+PASS: FLAC audio session delivers its original embedded album cover
+PASS: FLAC cover decoding preserves aspect ratio within the size budget
+PASS: bundled FFmpeg extracts an attached FLAC cover from the original file
+PASS: wav audio thumbnail loads without selecting the file
+PASS: wav duration is stored before filmstrip thumbnail completion
+PASS: ogg audio thumbnail loads without selecting the file
+PASS: ogg duration is stored before filmstrip thumbnail completion
+PASS: compatibility audio generates its waveform from the prepared playback asset
+PASS: compatibility waveform contains the actual audio samples
+PASS: cancelling a waveform task stops decoding with CancellationError
+PASS: waveform cancellation safely completes during reader startup/decoding (1/12)
+PASS: waveform cancellation safely completes during reader startup/decoding (2/12)
+PASS: waveform cancellation safely completes during reader startup/decoding (3/12)
+PASS: waveform cancellation safely completes during reader startup/decoding (4/12)
+PASS: waveform cancellation safely completes during reader startup/decoding (5/12)
+PASS: waveform cancellation safely completes during reader startup/decoding (6/12)
+PASS: waveform cancellation safely completes during reader startup/decoding (7/12)
+PASS: waveform cancellation safely completes during reader startup/decoding (8/12)
+PASS: waveform cancellation safely completes during reader startup/decoding (9/12)
+PASS: waveform cancellation safely completes during reader startup/decoding (10/12)
+PASS: waveform cancellation safely completes during reader startup/decoding (11/12)
+PASS: waveform cancellation safely completes during reader startup/decoding (12/12)
+PASS: disposed session suppresses stale cover and waveform updates
+PASS: cancelled cover extraction does not deliver a stale callback
+PASS: 42 audio waveform, cover, duration and cancellation checks

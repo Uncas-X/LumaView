@@ -1,0 +1,69 @@
+Historical report: private sample filenames have been anonymized; measurements and results are unchanged.
+
+PASS SVG declaration variant 0 renders actual red vector content
+PASS SVG declaration variant 0 retains original vector representation
+PASS SVG declaration variant 1 renders actual red vector content
+PASS SVG declaration variant 1 retains original vector representation
+PASS SVG declaration variant 2 renders actual red vector content
+PASS SVG declaration variant 2 retains original vector representation
+PASS SVG declaration variant 3 renders actual red vector content
+PASS SVG declaration variant 3 retains original vector representation
+PASS SVG declaration variant 4 renders actual red vector content
+PASS SVG declaration variant 4 retains original vector representation
+PASS SVG declaration variant 5 renders actual red vector content
+PASS SVG declaration variant 5 retains original vector representation
+PASS SVG declaration variant 6 renders actual red vector content
+PASS SVG declaration variant 6 retains original vector representation
+PASS SVG unsafe declaration or active/external resource 0 is rejected
+PASS SVG unsafe declaration or active/external resource 1 is rejected
+PASS SVG unsafe declaration or active/external resource 2 is rejected
+PASS SVG unsafe declaration or active/external resource 3 is rejected
+PASS SVG unsafe declaration or active/external resource 4 is rejected
+PASS SVG unsafe declaration or active/external resource 5 is rejected
+PASS SVG unsafe declaration or active/external resource 6 is rejected
+PASS SVG unsafe declaration or active/external resource 7 is rejected
+PASS SVG unsafe declaration or active/external resource 8 is rejected
+PASS SVG unsafe declaration or active/external resource 9 is rejected
+PASS SVG unsafe declaration or active/external resource 10 is rejected
+PASS SVG unsafe declaration or active/external resource 11 is rejected
+PASS SVG unsafe declaration or active/external resource 12 is rejected
+PASS SVG unsafe declaration or active/external resource 13 is rejected
+PASS DOS EPS preview reports native pixel size and bounded thumbnail
+PASS embedded low-resolution bitmap is never spuriously upsampled
+PASS embedded TIFF decodes real pixel content
+PASS palette+alpha TIFF true/1 retains complete image dimensions
+PASS palette+alpha TIFF true/1 preserves RGB columns without interleaved stripe corruption
+PASS palette+alpha TIFF true/1 preserves alpha semantics
+PASS palette+alpha TIFF true/2 retains complete image dimensions
+PASS palette+alpha TIFF true/2 preserves RGB columns without interleaved stripe corruption
+PASS palette+alpha TIFF true/2 preserves alpha semantics
+PASS palette+alpha TIFF false/1 retains complete image dimensions
+PASS palette+alpha TIFF false/1 preserves RGB columns without interleaved stripe corruption
+PASS palette+alpha TIFF false/1 preserves alpha semantics
+PASS palette+alpha TIFF false/2 retains complete image dimensions
+PASS palette+alpha TIFF false/2 preserves RGB columns without interleaved stripe corruption
+PASS palette+alpha TIFF false/2 preserves alpha semantics
+PASS malformed EPS section 0 fails safely
+PASS malformed EPS section 1 fails safely
+PASS malformed EPS section 2 fails safely
+PASS malformed EPS section 3 fails safely
+PASS malformed EPS section 4 fails safely
+PASS malformed EPS section 5 fails safely
+PASS malformed EPS section 6 fails safely
+PASS malformed EPS section 7 fails safely
+PASS malformed EPS section 8 fails safely
+PASS malformed EPS section 9 fails safely
+PASS malformed EPS section 10 fails safely
+PASS EPS document exposes honest bitmap-preview format and source dimensions
+PASS file filmstrip uses the same embedded EPS preview fallback
+PASS EPS page publishes complete bitmap through normal asynchronous document path
+PASS EPS page thumbnail uses bounded document pipeline
+PASS attached sample-vector.svg file thumbnail renders
+PASS attached sample-vector.svg retains original vector content
+PASS attached sample-vector.svg remains byte-for-byte unchanged
+INFO sample-vector.svg: SVG, 200 × 200, native PDF=false, native NSImage=true
+PASS attached sample-vector.eps file thumbnail renders
+PASS attached sample-vector.eps retains original vector content
+PASS attached sample-vector.eps remains byte-for-byte unchanged
+INFO sample-vector.eps: EPS, 500 × 500, native PDF=false, native NSImage=false
+PASS: 64 vector compatibility checks

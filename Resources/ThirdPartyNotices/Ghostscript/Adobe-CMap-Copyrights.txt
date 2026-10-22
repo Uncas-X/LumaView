@@ -1,0 +1,75 @@
+Files: 78-EUC-H, 78-EUC-V, 78-H, 78-RKSJ-H, 78-RKSJ-V, 78-V, 78ms-RKSJ-H, 78ms-RKSJ-V, 83pv-RKSJ-H, 90ms-RKSJ-H, 90ms-RKSJ-V, 90msp-RKSJ-H, 90msp-RKSJ-V, 90pv-RKSJ-H, 90pv-RKSJ-V, Add-H, Add-RKSJ-H, Add-RKSJ-V, Add-V, Adobe-CNS1-0, Adobe-CNS1-1, Adobe-CNS1-2, Adobe-CNS1-3, Adobe-CNS1-4, Adobe-CNS1-5, Adobe-CNS1-6, Adobe-GB1-0, Adobe-GB1-1, Adobe-GB1-2, Adobe-GB1-3, Adobe-GB1-4, Adobe-GB1-5, Adobe-Japan1-0, Adobe-Japan1-1, Adobe-Japan1-2, Adobe-Japan1-3, Adobe-Japan1-4, Adobe-Japan1-5, Adobe-Japan1-6, Adobe-Japan2-0, Adobe-Korea1-0, Adobe-Korea1-1, Adobe-Korea1-2, B5-H, B5-V, B5pc-H, B5pc-V, CNS-EUC-H, CNS-EUC-V, CNS1-H, CNS1-V, CNS2-H, CNS2-V, ETHK-B5-H, ETHK-B5-V, ETen-B5-H, ETen-B5-V, ETenms-B5-H, ETenms-B5-V, EUC-H, EUC-V, Ext-H, Ext-RKSJ-H, Ext-RKSJ-V, Ext-V, GB-EUC-H, GB-EUC-V, GB-H, GB-V, GBK-EUC-H, GBK-EUC-V, GBK2K-H, GBK2K-V, GBKp-EUC-H, GBKp-EUC-V, GBT-EUC-H, GBT-EUC-V, GBT-H, GBT-V, GBTpc-EUC-H, GBTpc-EUC-V, GBpc-EUC-H, GBpc-EUC-V, H, HKdla-B5-H, HKdla-B5-V, HKdlb-B5-H, HKdlb-B5-V, HKgccs-B5-H, HKgccs-B5-V, HKm314-B5-H, HKm314-B5-V, HKm471-B5-H, HKm471-B5-V, HKscs-B5-H, HKscs-B5-V, Hankaku, Hiragana, Hojo-EUC-H, Hojo-EUC-V, Hojo-H, Hojo-V, Identity-H, Identity-V, KSC-EUC-H, KSC-EUC-V, KSC-H, KSC-Johab-H, KSC-Johab-V, KSC-V, KSCms-UHC-H, KSCms-UHC-HW-H, KSCms-UHC-HW-V, KSCms-UHC-V, KSCpc-EUC-H, KSCpc-EUC-V, Katakana, NWP-H, NWP-V, RKSJ-H, RKSJ-V, Roman, UniCNS-UCS2-H, UniCNS-UCS2-V, UniGB-UCS2-H, UniGB-UCS2-V, UniGB-UTF16-V, UniGB-UTF32-V, UniGB-UTF8-V, UniHojo-UCS2-H, UniHojo-UCS2-V, UniHojo-UTF16-H, UniHojo-UTF16-V, UniHojo-UTF32-H, UniHojo-UTF32-V, UniHojo-UTF8-H, UniHojo-UTF8-V, UniJIS-UCS2-H, UniJIS-UCS2-HW-H, UniJIS-UCS2-HW-V, UniJIS-UCS2-V, UniJIS-UTF16-V, UniJIS-UTF32-V, UniJIS-UTF8-V, UniJIS2004-UTF16-V, UniJIS2004-UTF32-V, UniJIS2004-UTF8-V, UniJISPro-UCS2-HW-V, UniJISPro-UCS2-V, UniJISPro-UTF8-V, UniJISX0213-UTF32-V, UniJISX02132004-UTF32-V, UniKS-UCS2-H, UniKS-UCS2-V, UniKS-UTF16-H, UniKS-UTF16-V, UniKS-UTF32-H, UniKS-UTF32-V, UniKS-UTF8-H, UniKS-UTF8-V, V, WP-Symbol
+%%Copyright: -----------------------------------------------------------
+%%Copyright: Copyright 1990-2015 Adobe Systems Incorporated.
+%%Copyright: All rights reserved.
+%%Copyright:
+%%Copyright: Redistribution and use in source and binary forms, with or
+%%Copyright: without modification, are permitted provided that the
+%%Copyright: following conditions are met:
+%%Copyright:
+%%Copyright: Redistributions of source code must retain the above
+%%Copyright: copyright notice, this list of conditions and the following
+%%Copyright: disclaimer.
+%%Copyright:
+%%Copyright: Redistributions in binary form must reproduce the above
+%%Copyright: copyright notice, this list of conditions and the following
+%%Copyright: disclaimer in the documentation and/or other materials
+%%Copyright: provided with the distribution. 
+%%Copyright:
+%%Copyright: Neither the name of Adobe Systems Incorporated nor the names
+%%Copyright: of its contributors may be used to endorse or promote
+%%Copyright: products derived from this software without specific prior
+%%Copyright: written permission. 
+%%Copyright:
+%%Copyright: THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND
+%%Copyright: CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES,
+%%Copyright: INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+%%Copyright: MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+%%Copyright: DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR
+%%Copyright: CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+%%Copyright: SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+%%Copyright: NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+%%Copyright: LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+%%Copyright: HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+%%Copyright: CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+%%Copyright: OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+%%Copyright: SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+%%Copyright: -----------------------------------------------------------
+
+Files: Adobe-CNS1-7, UniCNS-UTF16-H, UniCNS-UTF16-V, UniCNS-UTF32-H, UniCNS-UTF32-V, UniCNS-UTF8-H, UniCNS-UTF8-V, UniGB-UTF16-H, UniGB-UTF32-H, UniGB-UTF8-H, UniJIS-UTF16-H, UniJIS-UTF32-H, UniJIS-UTF8-H, UniJIS2004-UTF16-H, UniJIS2004-UTF32-H, UniJIS2004-UTF8-H, UniJISX0213-UTF32-H, UniJISX02132004-UTF32-H
+%%Copyright: -----------------------------------------------------------
+%%Copyright: Copyright 1990-2017 Adobe Systems Incorporated.
+%%Copyright: All rights reserved.
+%%Copyright:
+%%Copyright: Redistribution and use in source and binary forms, with or
+%%Copyright: without modification, are permitted provided that the
+%%Copyright: following conditions are met:
+%%Copyright:
+%%Copyright: Redistributions of source code must retain the above
+%%Copyright: copyright notice, this list of conditions and the following
+%%Copyright: disclaimer.
+%%Copyright:
+%%Copyright: Redistributions in binary form must reproduce the above
+%%Copyright: copyright notice, this list of conditions and the following
+%%Copyright: disclaimer in the documentation and/or other materials
+%%Copyright: provided with the distribution. 
+%%Copyright:
+%%Copyright: Neither the name of Adobe Systems Incorporated nor the names
+%%Copyright: of its contributors may be used to endorse or promote
+%%Copyright: products derived from this software without specific prior
+%%Copyright: written permission. 
+%%Copyright:
+%%Copyright: THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND
+%%Copyright: CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES,
+%%Copyright: INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+%%Copyright: MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+%%Copyright: DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR
+%%Copyright: CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+%%Copyright: SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+%%Copyright: NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+%%Copyright: LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+%%Copyright: HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+%%Copyright: CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+%%Copyright: OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+%%Copyright: SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+%%Copyright: -----------------------------------------------------------

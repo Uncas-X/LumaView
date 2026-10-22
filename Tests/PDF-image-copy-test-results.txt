@@ -1,0 +1,40 @@
+PASS page size uses original PDF points
+PASS first embedded image has its exact independent bounds
+PASS selection records original image sample dimensions
+PASS page background does not become a full-page image selection
+PASS q/Q restores CTM between different images
+PASS invalid pointer coordinates are ignored
+PASS original RGB extraction preserves visible orientation (maximum sample difference 0)
+PASS overlapping images select the last painted image
+PASS clipped-away image content cannot be copied by clicking outside it
+PASS clip reduces the exported image region
+PASS clipped extraction matches the visible image (maximum sample difference 0)
+PASS even-odd clipping holes do not claim hidden image pixels
+PASS visible portion around a clip hole remains selectable
+PASS crop box plus PDF rotation uses the same oriented page space as viewer
+PASS rotated image hit test follows oriented crop coordinates
+PASS cropped rotated PDF preserves image pose in copied bitmap (maximum sample difference 0)
+PASS flip image CTM is retained during copy (maximum sample difference 0)
+PASS quarter-turn image CTM is retained during copy (maximum sample difference 0)
+PASS skew image CTM is retained during copy (maximum sample difference 0)
+PASS nested Form resources and matrices accumulate in drawing order
+PASS nested Form image copies original pixels in visible pose (maximum sample difference 0)
+PASS Form inherits missing resources and clips at BBox
+PASS Form BBox excludes invisible image edges
+PASS PDF Decode arrays use accurate renderer fallback (maximum sample difference 0)
+PASS rotated renderer fallback keeps original edge coverage (maximum sample difference 0)
+PASS soft-mask image retains visible alpha (maximum sample difference 0)
+PASS JPEG image fixture encoded
+PASS JPEG source is decoded with original size and PDF flip (maximum sample difference 0)
+PASS inline image remains copyable after scanner has been released (maximum sample difference 0)
+PASS cyclic Form resources terminate without losing following valid images
+PASS vector shapes are not mislabeled as embedded images
+PASS missing resources and singular matrices fail safely
+PASS operator budget rejects incomplete image indexes
+PASS complex content stream stops within bounded scan time
+PASS negative page rejected
+PASS out-of-range page rejected
+PASS caller output bound is applied before bitmap allocation
+PASS copy bitmap is RGBA for PNG and TIFF pasteboard formats
+PASS PDF-compatible Illustrator uses the same image-copy support
+PASS 39 PDF embedded image copy checks

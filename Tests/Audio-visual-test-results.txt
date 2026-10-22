@@ -1,0 +1,37 @@
+PASS Viewer loads audio and its embedded cover
+PASS Main canvas displays the original album cover in preference to a waveform card
+PASS Composited cover geometry keeps the album aspect ratio after replacing a rectangular loading card
+PASS A covered audio file avoids unnecessary full-file waveform decoding
+PASS Audio visual tests keep playback muted
+PASS Unselected audio obtains its duration during filmstrip loading
+PASS Unselected duration is accurate without changing the selected file
+PASS Neighboring video obtains its actual duration alongside unselected audio
+PASS Render audio-video-duration-badges.png
+PASS Independent audio transport stays above the file thumbnails
+PASS Render audio-album-cover.png
+PASS A real filmstrip click selects uncovered audio
+PASS Uncovered audio obtains its sample-derived waveform in the viewer
+PASS Uncovered audio uses its real amplitude envelope
+PASS Rendered waveform replaces the loading music-note placeholder
+PASS Render audio-real-waveform.png
+PASS Independent audio play button starts playback
+PASS Independent audio stop button pauses and returns to the beginning
+PASS Audio transport does not start slideshow playback
+PASS Rapid real thumbnail switch remains routable (1/9)
+PASS Rapid real thumbnail switch remains routable (2/9)
+PASS Rapid real thumbnail switch remains routable (3/9)
+PASS Rapid real thumbnail switch remains routable (4/9)
+PASS Rapid real thumbnail switch remains routable (5/9)
+PASS Rapid real thumbnail switch remains routable (6/9)
+PASS Rapid real thumbnail switch remains routable (7/9)
+PASS Rapid real thumbnail switch remains routable (8/9)
+PASS Rapid real thumbnail switch remains routable (9/9)
+PASS Rapid audio switching finishes on the requested still image
+PASS Late audio cover/waveform callbacks do not overwrite the next file
+PASS Retired audio sessions remain stopped after rapid switching
+PASS Viewer remains open after audio thumbnail switching
+PASS Render audio-switch-final-photo.png
+PASS Waveform view can be reopened after rapid switching
+PASS Closing waveform playback stops audio and completes the viewer transition
+
+35 passed, 0 failed

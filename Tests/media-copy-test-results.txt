@@ -1,0 +1,47 @@
+PASS: unrotated copy preserves original image object
+PASS: complete rotation preserves original pixels
+PASS: clockwise quarter-turn swaps pixel dimensions
+PASS: clockwise rotation preserves orientation and transparent pixels
+PASS: negative rotation restores image dimensions and alpha
+PASS: png data carries actual rotated pixel dimensions
+PASS: png encoding retains alpha without UI background
+PASS: tiff data carries actual rotated pixel dimensions
+PASS: tiff encoding retains alpha without UI background
+PASS: copy before preparation returns a recoverable error
+PASS: video frame callback runs on main
+PASS: first video frame has native dimensions and image pixels
+PASS: paused seek reaches non-keyframe timestamp
+PASS: video frame callback runs on main
+PASS: paused non-keyframe capture contains the requested blue scene
+PASS: precise capture selects frame 37, not earlier same-scene keyframe (got 37)
+PASS: copy preserves paused playback position and state
+PASS: video frame callback runs on main
+PASS: explicit menu-open timestamp captures earlier frame instead of current progress
+PASS: explicit fractional timestamp selects frame 7 rather than frame zero (got 7)
+PASS: explicit frame extraction never seeks the player
+PASS: video starts playback for in-motion capture
+PASS: video frame callback runs on main
+PASS: playing capture honors frozen context-menu timestamp
+PASS: capture does not pause ongoing playback
+PASS: seek reaches exclusive video endpoint
+PASS: video frame callback runs on main
+PASS: copy at playback end returns the final frame
+PASS: end-of-video capture does not restart playback
+PASS: cancelled frame request never delivers a late completion
+PASS: new frame request completes after superseding earlier request
+PASS: superseded frame cannot replace newer copy pixels
+PASS: background caller is marshalled to main for frame completion
+PASS: video frame callback runs on main
+PASS: video preferred transform is applied to copied portrait dimensions
+PASS: rotated video copies genuine decoded video pixels
+PASS: MKV session owns a different actual compatible playback asset
+PASS: video frame callback runs on main
+PASS: compatibility video frame uses actual player-item asset
+PASS: audio-only media rejects video-frame copying
+PASS: fixture audio continues after two-second video track
+PASS: player seeks into remaining audio after final video frame
+PASS: video frame callback runs on main
+PASS: copy during audio tail returns final actual video frame 59
+PASS: copying final video frame preserves later audio timeline
+PASS: closing session cancels frame extraction before completion
+PASS: 46 media copy checks

@@ -1,0 +1,77 @@
+PASS Three-page PDF expands neighboring media files without flattening pages into files
+PASS PDF displays internal-page thumbnails and page seek slider
+PASS Initial current/total page counter is correct
+PASS Page strip sits above file strip and uses smaller thumbnails
+PASS PDF row replaces media transport without showing audio/video controls
+PASS Document initially highlights selected file and leaves page selection inactive
+PASS Document hides welcome text, open button, and empty-state layer
+PASS PDF canvas retains vector instructions in tiled layer
+PASS Document dock has no page/file focus text buttons
+PASS Rendered current-file border is gray when page navigation has focus
+PASS Rendered current-page border is orange when page navigation has focus
+PASS Up arrow focuses pages and transfers active thumbnail border from files to pages
+PASS Right arrow in page focus switches internal page while retaining file
+PASS New page arrives with a complete visible image before asynchronous vector tiles
+PASS Fit-to-window page uses its complete screen-resolution image without tile-by-tile reveal
+PASS Page arrival uses one whole-page opacity transition
+PASS Page counter and slider track keyboard page switch
+PASS Left arrow in page focus switches previous internal page
+PASS First-page boundary never crosses to previous file
+PASS Last-page boundary never crosses to next file
+PASS Real mouse click selects page thumbnail without closing viewer
+PASS Page thumbnail click sets page-navigation focus
+PASS Real page-slider click seeks to final internal page
+PASS Page-slider completion restores keyboard navigation to canvas
+PASS Page-slider release snaps thumb to the selected integer page
+PASS Clicking selected file thumbnail activates file navigation without needing text labels
+PASS File thumbnail click highlights file border while page border becomes inactive
+PASS Clicking selected page thumbnail activates internal-page navigation without text labels
+PASS Page thumbnail click highlights page border while file border becomes inactive
+PASS Down arrow returns active thumbnail border to files
+PASS Rendered current-file border returns to orange after Down arrow
+PASS Rendered current-page border becomes gray after Down arrow
+PASS Right arrow in file focus advances to adjacent SVG file
+PASS Single-page SVG hides unnecessary internal-page controls
+PASS SVG retains live vector tiles at 3200% zoom
+PASS High zoom keeps native vector drawing above complete page fallback on solid white paper
+PASS Rotation keeps SVG vector drawing active
+PASS Returning to PDF remembers its selected internal page
+PASS Real lower-file-strip click opens multipage TIFF without closing viewer
+PASS TIFF exposes two internal pages with file focus initially
+PASS TIFF page navigation selects second stored image
+PASS TIFF second page preserves its own raster dimensions
+PASS Rapid page selection only displays newest page callback
+PASS Page callbacks cannot replace a subsequently selected SVG
+PASS Late old-document callbacks remain discarded after completion
+PASS Pending PDF page cannot overwrite a newly selected ordinary image
+PASS Ordinary image removes page and media navigation rows
+PASS PDF close completes animation
+PASS Closed canvas releases active document rendering layer
+PASS Reopening restores selected PDF page as vector source
+PASS Window reopen restores vector layer rather than preview bitmap
+PASS Close during pending page load cancels asynchronous presentation
+PASS Reopen during pending page transition keeps visible page and selected index synchronized
+PASS Reopened page counter, slider and rendered page agree
+PASS Changing language immediately refreshes page-thumbnail navigation tooltip
+PASS English language refresh updates application menu
+PASS Page-navigation tooltip retains directional keyboard guidance in selected language
+PASS Existing zoom control tooltip refreshes with language
+PASS Language refresh preserves current file, page, and keyboard focus
+PASS Language preferences opens a dedicated popup window
+PASS Language popup includes all supported languages plus Follow System
+PASS Japanese language refresh updates application menu immediately
+PASS Open language preferences refreshes its title and selected language
+PASS Language preferences closes without closing media viewer
+PASS Closing preferences preserves active document viewer
+PASS Language tests leave user's saved preference unchanged
+PASS EPS opens as live vector instructions instead of an embedded preview bitmap
+PASS EPS keeps native vector drawing at 3200 percent zoom
+PASS Multipage PostScript uses the existing page thumbnails and current-total indicator
+PASS Up then Right navigates the next PostScript page with page focus
+PASS Left returns to the previous PostScript page and updates its counter
+PASS Down then Right returns to file navigation and opens the adjacent PNG
+PASS Unfinished PostScript conversion leaves the native viewer responsive
+PASS Selecting PNG while PostScript is converting cancels the old document request
+PASS Cancelled PostScript completion cannot overwrite the newly selected PNG
+
+75 passed, 0 failed

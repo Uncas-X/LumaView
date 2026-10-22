@@ -1,0 +1,16 @@
+PASS The app contains a frozen extension-to-UTI map
+PASS Frozen map covers exactly the selectable catalog extensions
+PASS Canonical .jpg uses and declares public.jpeg
+PASS Canonical .mp3 uses and declares public.mp3
+PASS Canonical .mp4 uses and declares public.mpeg-4
+PASS Canonical .pdf uses and declares com.adobe.pdf
+PASS Canonical .png uses and declares public.png
+PASS Document declarations contain concrete formats without abstract category handlers
+PASS Runtime associations contain no dynamic guessed types
+PASS Every runtime selection type is declared by this exact app bundle
+PASS Frozen mapping and document declarations stay in exact agreement
+PASS Runtime resolution honors every shipped mapping instead of reselecting system aliases
+PASS All four document categories remain alternate viewers and do not claim automatic defaults
+PASS Every custom mapping has one matching imported UTI declaration
+PASS Imported declarations retain each extension and its expected media category
+15 passed, 0 failed
