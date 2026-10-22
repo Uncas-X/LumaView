@@ -1,5 +1,13 @@
 # LumaView 1.7.2
 
+<!-- language-navigation:start -->
+**简体中文** · [English](docs/readme/README.en.md) · [繁體中文](docs/readme/README.zh-Hant.md) · [日本語](docs/readme/README.ja.md) · [한국어](docs/readme/README.ko.md) · [Français](docs/readme/README.fr.md) · [Deutsch](docs/readme/README.de.md) · [Español](docs/readme/README.es.md) · [Italiano](docs/readme/README.it.md) · [Português (Brasil)](docs/readme/README.pt-BR.md) · [Русский](docs/readme/README.ru.md) · [العربية](docs/readme/README.ar.md) · [हिन्दी](docs/readme/README.hi.md) · [Türkçe](docs/readme/README.tr.md) · [Nederlands](docs/readme/README.nl.md) · [Polski](docs/readme/README.pl.md)
+<!-- language-navigation:end -->
+
+**[下载 macOS 应用](https://github.com/Uncas-X/LumaView/releases/latest/download/LumaView-macOS.zip)** · [版本与更新说明](https://github.com/Uncas-X/LumaView/releases)
+
+支持 macOS 13+，同一个安装包兼容 Intel 与 Apple Silicon。下载 ZIP 后解压，将 `LumaView.app` 拖入“应用程序”即可安装。
+
 一款 macOS 原生媒体查看器，以 Picasa Photo Viewer 的快捷看图习惯为参考，支持同文件夹浏览、缩放、拖动、旋转、胶片带、全屏和幻灯片。1.5 加入音频封面与真实波形、多页文档导航、随缩放绘制的矢量画布，以及默认跟随系统的多语言设置。采用独立名称与原创图标，不宣称与历史版 Picasa 的全部功能和交互完全一致。
 
 1.7.2 统一图片透明区域的显示：PNG、GIF、PSD / PSB 等栅格图片直接露出当前查看背景，阴影随实际图像轮廓和透明度变化，不再显示灰白格或整张透明画布的矩形阴影。PDF 等文档仍按白色纸面显示。
@@ -10,7 +18,7 @@
 
 需要 macOS 13 或更新系统，支持 Intel 与 Apple Silicon。
 
-1. 打开交付的 `LumaView.app`，或将它拖入“应用程序”文件夹后打开。
+1. 从 [Releases](https://github.com/Uncas-X/LumaView/releases) 下载 `LumaView-macOS.zip`，解压后将 `LumaView.app` 拖入“应用程序”文件夹并打开。
 2. 拖入图片、视频、音频或文件夹，也可以按 `⌘O` 选择文件。单独打开一个文件时会列出同文件夹的媒体，多选时浏览所选文件。文件夹只扫描当前层，不递归扫描子文件夹。
 3. 在 Finder 中也可以右键文件，选择“打开方式 → LumaView”。
 
