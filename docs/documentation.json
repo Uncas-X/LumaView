@@ -1,0 +1,62 @@
+{
+  "locales": [
+    "zh-Hans",
+    "zh-Hant",
+    "en",
+    "ja",
+    "ko",
+    "fr",
+    "de",
+    "es",
+    "it",
+    "pt-BR",
+    "ru",
+    "ar",
+    "hi",
+    "tr",
+    "nl",
+    "pl"
+  ],
+  "documents": [
+    {
+      "source": "README.md",
+      "target": "README.md"
+    },
+    {
+      "source": "FORMATS.md",
+      "target": "FORMATS.md"
+    },
+    {
+      "source": "TEST-RESULTS.md",
+      "target": "TEST-RESULTS.md"
+    },
+    {
+      "source": "ThirdParty/README.md",
+      "target": "ThirdParty/README.md"
+    },
+    {
+      "source": "ThirdParty/README-Ghostscript.md",
+      "target": "ThirdParty/README-Ghostscript.md"
+    },
+    {
+      "source": "Resources/Localizations/README.md",
+      "target": "Resources/Localizations/README.md"
+    },
+    {
+      "source": "Tests/Release-1.7.0.md",
+      "target": "Tests/Release-1.7.0.md"
+    },
+    {
+      "source": "Tests/Release-1.7.1.md",
+      "target": "Tests/Release-1.7.1.md"
+    },
+    {
+      "source": "Resources/ThirdPartyNotices/NOTICE.txt",
+      "target": "Resources/ThirdPartyNotices/NOTICE.txt.md"
+    },
+    {
+      "source": "Resources/ThirdPartyNotices/Ghostscript/NOTICE.txt",
+      "target": "Resources/ThirdPartyNotices/Ghostscript/NOTICE.txt.md"
+    }
+  ]
+}

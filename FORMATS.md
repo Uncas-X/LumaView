@@ -1,5 +1,10 @@
 # 格式与预览说明
 
+<!-- full-translation:start -->
+[简体中文](docs/i18n/zh-Hans/FORMATS.md) · [繁體中文](docs/i18n/zh-Hant/FORMATS.md) · [English](docs/i18n/en/FORMATS.md) · [日本語](docs/i18n/ja/FORMATS.md) · [한국어](docs/i18n/ko/FORMATS.md) · [Français](docs/i18n/fr/FORMATS.md) · [Deutsch](docs/i18n/de/FORMATS.md) · [Español](docs/i18n/es/FORMATS.md) · [Italiano](docs/i18n/it/FORMATS.md) · [Português (Brasil)](docs/i18n/pt-BR/FORMATS.md) · [Русский](docs/i18n/ru/FORMATS.md) · [العربية](docs/i18n/ar/FORMATS.md) · [हिन्दी](docs/i18n/hi/FORMATS.md) · [Türkçe](docs/i18n/tr/FORMATS.md) · [Nederlands](docs/i18n/nl/FORMATS.md) · [Polski](docs/i18n/pl/FORMATS.md)
+<!-- full-translation:end -->
+
+
 LumaView 1.7.2 的格式目录包含 72 组图片、矢量 / 文档、视频和音频选项。目录用于发现文件和选择默认打开方式，不是逐项实测的兼容性清单。后缀相同的文件可能使用不同编码；最终能否打开由文件内容、系统能力和内置解码器决定。
 
 ## 图片

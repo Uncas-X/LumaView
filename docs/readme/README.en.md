@@ -1,156 +1,143 @@
-# LumaView 1.7.2 — English
+# LumaView 1.7.2
 
-<!-- language-navigation:start -->
-[简体中文](../../README.md) · **English** · [繁體中文](README.zh-Hant.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [Français](README.fr.md) · [Deutsch](README.de.md) · [Español](README.es.md) · [Italiano](README.it.md) · [Português (Brasil)](README.pt-BR.md) · [Русский](README.ru.md) · [العربية](README.ar.md) · [हिन्दी](README.hi.md) · [Türkçe](README.tr.md) · [Nederlands](README.nl.md) · [Polski](README.pl.md)
-<!-- language-navigation:end -->
+<!-- doc-navigation:start -->
+[Documentation](../i18n/en/INDEX.md) · [简体中文](../i18n/zh-Hans/README.md) · [繁體中文](../i18n/zh-Hant/README.md) · **English** · [日本語](../i18n/ja/README.md) · [한국어](../i18n/ko/README.md) · [Français](../i18n/fr/README.md) · [Deutsch](../i18n/de/README.md) · [Español](../i18n/es/README.md) · [Italiano](../i18n/it/README.md) · [Português (Brasil)](../i18n/pt-BR/README.md) · [Русский](../i18n/ru/README.md) · [العربية](../i18n/ar/README.md) · [हिन्दी](../i18n/hi/README.md) · [Türkçe](../i18n/tr/README.md) · [Nederlands](../i18n/nl/README.md) · [Polski](../i18n/pl/README.md)
+<!-- doc-navigation:end -->
 
-**[Download LumaView for macOS](https://github.com/Uncas-X/LumaView/releases/latest/download/LumaView-macOS.zip)** · **[All releases](https://github.com/Uncas-X/LumaView/releases)** · [中文完整说明](../../README.md)
 
-This is the full English manual for **LumaView 1.7.2, build 14**, a native macOS viewer for images, video, audio, and multi-page documents. Its quick-browsing workflow is inspired by Picasa Photo Viewer: open a file, browse neighboring media, zoom, pan, rotate, and use a filmstrip or slideshow. LumaView has its own name and original icon and is not affiliated with Google. It focuses on viewing rather than editing or managing a photo library, and does not claim to reproduce every historical Picasa feature or interaction.
+**[Download the macOS app](https://github.com/Uncas-X/LumaView/releases/latest/download/LumaView-macOS.zip)** · [Releases and release notes](https://github.com/Uncas-X/LumaView/releases)
 
-## Download and install
+Requires macOS 13+. The same package supports Intel and Apple Silicon. Extract the downloaded ZIP and drag `LumaView.app` into Applications to install it.
 
-Requires **macOS 13 or later**. The app is a universal binary for Intel and Apple Silicon Macs.
+A native macOS media viewer inspired by the quick-viewing habits of Picasa Photo Viewer, with same-folder browsing, zooming, panning, rotation, a filmstrip, fullscreen, and slideshows. Version 1.5 added audio artwork and real waveforms, multi-page document navigation, a vector canvas redrawn at the current zoom, and language settings that follow the system by default. It uses an independent name and original icon and does not claim to reproduce every feature or interaction of historical Picasa releases.
 
-1. Download the ZIP above and extract it.
-2. Drag `LumaView.app` into **Applications**, then open it.
-3. Drop an image, video, audio file, or folder onto the app, or press `⌘O` to choose files. You can also use **Open With → LumaView** in Finder.
+Version 1.7.2 unifies image transparency: transparent areas of raster images such as PNG, GIF, and PSD / PSB reveal the current viewing background. Shadows follow the actual image outline and opacity; there is no checkerboard or rectangular shadow around the entire transparent canvas. Documents such as PDF retain a white paper background.
 
-Opening a single file lists supported media in the same folder. Selecting multiple files browses that selection. Folder scans include only the current level; subfolders are not scanned recursively.
+The PSD / PSB preview improvements from 1.7.1 remain: the filmstrip prefers a valid embedded JPEG, while the main view decodes the actual compatibility composite. RLE uses chunked reads, and a problem that prevented thumbnail generation for some small composites with ICC profiles has been fixed.
 
-The app uses a local **ad hoc signature** and has **not been notarized by Apple**. If macOS blocks a downloaded copy, verify its source and use the relevant **Privacy & Security** option to allow it to open. There is no need to disable Gatekeeper.
+## Use and installation
+
+Requires macOS 13 or later, with support for Intel and Apple Silicon.
+
+1. Download `LumaView-macOS.zip` from [Releases](https://github.com/Uncas-X/LumaView/releases), extract it, drag `LumaView.app` into Applications, and open it.
+2. Drop an image, video, audio file, or folder onto the app, or press `⌘O` to select files. Opening one file lists media in the same folder; selecting multiple files browses that selection. Folder scans cover the current level only and do not recurse into subfolders.
+3. In Finder, you can also right-click a file and choose Open With → LumaView.
+
+Local builds use an ad hoc signature and have not been notarized by Apple. If Gatekeeper blocks a downloaded copy on another Mac, verify its source and use the system's Privacy & Security option to allow it to open.
 
 ## Default application settings
 
-Choose **LumaView → Default Application…**, press `⌘,`, or open the corresponding item in the More menu. Search or select formats grouped into images, vectors/documents, video, and audio, then apply LumaView as the default application for the selected formats.
+Choose **LumaView → Default Application…**, press `⌘,`, or open settings from the More menu. Formats are grouped into images, vectors / documents, video, and audio. Search and select formats, then click Set as Default for Selected Formats. Whenever the dialog opens, the app becomes active again, or changes finish, it reads the actual system associations: a checkmark means every type in the group opens with this copy of LumaView; a dash means only some types do, or they still point to another copy. System associations persist across restarts; unapplied selections are not presented as successfully applied settings. Select All Formats at the top covers all images, vector documents, video, and audio regardless of the search filter; individual categories can still be selected separately. Clear only clears the current selection and does not remove existing system defaults.
 
-The dialog reads the actual system associations when it opens, when the app becomes active again, and after changes are applied. A checkmark means all types in a group point to this copy of LumaView; a mixed state means only some types do, or an association points to another copy. System associations persist across app restarts. Unapplied selections are not shown as successful changes.
-
-**Select All Formats** includes every image, vector/document, video, and audio format, regardless of the current search. Individual groups can also be selected. Clearing the selection only clears the current choices; it does not remove existing system associations.
-
-Progress and the results read back from macOS are shown while applying changes. Cancel stops subsequent changes but leaves completed changes in place. The format list describes available file associations, not a guarantee that every codec or file has been tested. See [format coverage and preview limits](../../FORMATS.md) in Chinese.
+Settings display progress and read back each result from the system. Cancel stops subsequent changes; completed changes remain. The format list represents selectable file associations, not a claim that every internal encoding or file has been tested. See [Formats and previews](../i18n/en/FORMATS.md) for details.
 
 ## Viewing and playback
 
-Opening the first file expands the window to the screen's available area; press `F` for fullscreen. Click the bottom filmstrip to switch files. Controls hide after the pointer rests over the viewing area and reappear when it moves.
+Opening the first file expands the window to the current screen's available area. Press `F` for fullscreen. Click the bottom filmstrip to change files. Controls hide after the pointer rests in the viewing area for a while and reappear when it moves.
 
-Images and video support zooming, panning, rotation, and fullscreen. Opening, switching, zooming, and rotation use short, interruptible transitions. macOS **Reduce Motion** disables these custom transitions without stopping animated images. The default background is translucent frosted glass; press **Space** to cycle through frosted, dark, and light backgrounds.
+Version 1.5.2 fixed blank or repeatedly flashing thumbnails during extended browsing of large folders: visible thumbnails are retained independently, and offscreen loading is canceled promptly. Results from the previous folder cannot enter the new list. Undecodable files display a stable placeholder and can be retried when their range is revisited.
 
-Raster transparency is consistent across formats, including PNG, GIF, PSD, and PSB: transparent pixels reveal the current background, and shadows follow the visible content and its alpha rather than the full rectangular canvas. GIF/APNG shadows update with each frame. Copying an image preserves its transparent pixels without adding the viewer background or shadow. Document pages retain a white paper background.
+Images and videos support zoom, pan, rotation, and fullscreen. Window changes, image changes, zooming, and rotation use short smooth transitions that further input can interrupt. Enabling the system's Reduce Motion setting disables these custom transitions while animated images continue playing. The default background is translucent frosted glass; press Space to cycle through frosted, dark, and light backgrounds.
 
-Visible file thumbnails remain retained, requests for offscreen thumbnails are canceled, and results from a previous folder cannot overwrite the new list. Files that cannot be decoded use a stable placeholder and may be retried when that range is revisited. PSD/PSB thumbnails prefer a valid embedded JPEG; the main image uses the saved compatibility composite, not the thumbnail or an editable layer stack.
+Raster transparency follows one rule: show the current background and cast shadows only from pixels containing visible content, retaining the opacity of translucent edges. GIF / APNG shadows change with each frame. Copying an image preserves its original transparent pixels and excludes the viewer background and shadow.
 
-Media playback, stop, position, and volume controls sit **above the file filmstrip**. Audio and video start automatically, then remain at the end when finished. Press `P` to replay, or `S` to stop and return to the beginning. The slideshow button is separate: `⌘4` starts continuous browsing, advances images at the selected interval, and waits for audio/video to finish before moving on. Playing a single media file does not automatically advance to the next file.
+Audio/video play, stop, position, and volume controls appear above the filmstrip. Media plays automatically when opened and remains at the end when finished; press `P` to replay or `S` to stop and return to the beginning. The slideshow button below is independent of media playback: after `⌘4` starts continuous playback, images advance at the selected interval, while audio/video finishes before advancing. Playing an individual audio/video file does not automatically move to the next item.
 
-Native macOS playback is used first. When required, bundled universal **FFmpeg 9.0.2** and **dav1d 1.5.3** prepare a compatible local file, trying a container change first where appropriate and transcoding when necessary. No separate player, Homebrew installation, codec pack, or network access is needed. Fallback playback waits for the **entire file** to be prepared and displays progress. Switching files or closing the window cancels preparation. Long videos can take time and require additional disk space on first playback.
+Native macOS playback is tried first. If the system cannot play the file directly, bundled universal FFmpeg 9.0.2 and dav1d 1.5.3 prepare a compatible file locally, attempting a container change first where appropriate and then transcoding. No separate player, Homebrew, or codec pack is needed, and no network access is used. Compatibility playback waits for the entire file to be prepared, showing progress; changing files or closing the window cancels preparation. Preparing a long video for the first time may take substantial time and extra disk space.
 
-Press `C` or use the More menu to configure looping, wheel behavior, closing by clicking the background, the filmstrip, sorting, and slideshow intervals of 2, 3, 5, 8, or 10 seconds. The wheel zooms by default; hold `Ctrl` to browse files instead. If the wheel is configured to browse, `Ctrl` temporarily zooms. Clicking the background outside the image closes the viewer by default. Preferences are saved locally.
+Press `C` or use the More menu to configure looping, wheel behavior, background-click closing, the filmstrip, sorting, and slideshow intervals (2, 3, 5, 8, or 10 seconds). The wheel zooms by default; hold `Ctrl` to browse files temporarily. If the wheel is set to browse, `Ctrl` temporarily zooms instead. Clicking the background outside the image closes the viewer by default. These preferences are stored locally.
 
-## Context menus and copying
+## Context menu and copying
 
-Right-click or Control-click the main viewing area to **Open With → application / Other Application…** or **Show in Finder**. Open With affects only this opening and does not change default associations. These commands remain available for files that cannot be decoded.
+Right-click (or Control-click) the main view to choose Open With → Application / Other Application… or Show in Finder. Open With affects this opening only and does not change default associations. Both options remain available for undecodable files.
 
-- **Images:** Copy Image copies the entire currently decoded image, preserving its view rotation and transparent pixels. It does not capture the toolbar or only the visible, zoomed-in screen area.
-- **Video:** Copy Current Frame copies the frame corresponding to when the context menu was opened, preserving video orientation and view rotation without changing playback position or state.
-- **PDF / PDF-compatible AI:** Right-click a supported embedded bitmap to Copy This Image, or choose Copy Current Page. Hit detection follows the actual click position after zooming, panning, or rotation. Text and vector regions are not treated as embedded images. Complex masks or color spaces may require copying the visible image region, which can include overlaid text. A page consisting of one scanned image is copied as that entire scan.
-- **`⌘C`:** Copies the current image, video frame, or document page. Audio does not offer image copying. The clipboard receives PNG and TIFF data. If the file/page changes or the viewer closes, a stale asynchronous copy cannot overwrite the clipboard.
+- Images: choose Copy Image. This preserves view rotation and transparent pixels and copies the entire currently decoded image, without capturing toolbars or only the zoomed screen region.
+- Video: choose Copy Current Frame. This copies the frame corresponding to the moment the context menu opened, preserving video orientation and view rotation without changing playback position or state.
+- PDF / PDF-compatible AI: right-click a bitmap on a page to Copy This Image, or choose Copy Current Page. Hit detection follows the actual position after zooming, panning, and rotation. Ordinary text and vector regions are not treated as images; complex masks or color spaces use the visible result of the image region, which may include overlaid text. A page scanned as one image is copied as the entire scan.
+- `⌘C` copies the current image, video frame, or document page; audio does not provide image copying. The clipboard receives PNG and TIFF. Changing files / pages or closing the viewer prevents stale copy results from overwriting the clipboard.
 
-Document pages and embedded images are copied as bitmaps limited to a longest side of 8192 pixels and approximately 32 megapixels, not as PDF/SVG vector instructions. If a large image is displayed using a bounded preview, copying uses that preview. PDF image discovery has complexity limits; special structures such as images inside pattern fills may not be individually selectable, but the current page can still be copied.
+Copies of document pages and embedded images are bitmaps limited to a longest side of 8192 pixels and approximately 32 megapixels; PDF/SVG vector instructions are not placed on the clipboard. If a large image is displaying a bounded preview, that preview is copied. PDF image scanning has complexity limits: special structures such as images inside pattern fills may not be individually selectable, but the current page can still be copied.
 
-## Audio, documents, and vectors
+Standard SVG 1.0/1.1 headers are parsed offline without loading external DTDs. Version 1.7 bundles Ghostscript 10.08.0 to convert EPS / PostScript and legacy PostScript AI to PDF while retaining paths, text, and embedded images. The main view redraws vectors at the current zoom; multi-page PS uses the existing page navigation. No additional installation is required. If conversion fails but the EPS has a valid embedded TIFF, it can fall back to that preview, clearly labeled TIFF. Raster images inside the original do not become vectors.
 
-Audio displays **embedded cover art** when available. Otherwise, the app asynchronously analyzes real audio samples and displays a waveform for the full track. A placeholder is shown during analysis; playback need not wait for the waveform. Artwork comes from embedded metadata, not the network or neighboring image files. Audio and video filmstrip thumbnails share the same `▶ duration` badge; an unread duration appears as `▶ –:––`.
+## Audio, documents, and languages
 
-PDF, PDF-compatible AI, multi-page PostScript, and multi-page TIFF support page browsing. Smaller page thumbnails, a page-position slider, and the current/total page count appear above the file filmstrip. Press `↑` to focus pages and `↓` to focus files. An orange border marks the selection in the focused row; the other row retains its selection with a gray border. There are no extra Pages/Files labels.
+Audio uses embedded artwork in the main view when available. Otherwise, actual samples are analyzed asynchronously to display a waveform for the full track. A placeholder appears during analysis, and playback does not need to wait. Audio and video thumbnails use the same `▶ duration` badge at the lower right, with matching font, background, and position; before duration is available, they show `▶ –:––`. Artwork comes from embedded file metadata, without searching the network or neighboring files.
 
-`←` / `→`, `J` / `K`, and `Home` / `End` act on the focused row. Clicking a row focuses it. Page navigation stops at the document's beginning or end rather than jumping to another file. The lower previous/next-file buttons always switch files. Hiding the file filmstrip leaves page navigation available.
+PDF, PDF-compatible AI, and multi-page TIFF support page browsing. Smaller page thumbnails, a page-progress slider, and current / total page numbers appear above the file filmstrip. Press `↑` to focus pages and `↓` to focus files. The selected thumbnail in the focused row has an orange border; the other row retains its selection with a gray border. No extra Pages / Files labels are shown. `←` / `→`, `J` / `K`, and `Home` / `End` act on the current focus. Clicking a row also focuses it. Page navigation stops at the first and last pages without unexpectedly moving to another file. The lower previous / next file buttons always change files. Page navigation remains available when the file filmstrip is hidden.
 
-PDF, SVG, and PDF-compatible AI draw the visible region from vector instructions at the current zoom. Transparent document areas use white paper. When changing pages, the complete new page is prepared before a whole-page fade; background vector-detail rendering does not leave blank tiles appearing one by one. Embedded photos and other bitmaps remain limited by their source resolution.
+PDF, SVG, and PDF-compatible AI draw the visible region from original vector instructions at the current zoom, instead of enlarging a fixed preview. Transparent document regions use plain white paper, without a checkerboard. Changing pages waits for the complete new page before a whole-page fade; background vector-detail drawing does not leave blank tiles appearing one at a time. Embedded photos and other bitmaps remain limited by their original resolution.
 
-Standard SVG 1.0/1.1 headers are parsed offline without loading external DTDs. SVG scripts and external resources are rejected. Bundled **Ghostscript 10.08.0** converts supported EPS, PostScript, and legacy PostScript AI into PDF while preserving paths, text, and embedded images for zoom-dependent vector drawing. No additional installation is required. If conversion fails but an EPS contains a valid embedded TIFF, that preview may be used and is identified as TIFF. Embedded raster content does not become vector content.
+Choose **LumaView → Language…**, also available in the More menu. The default follows the system, with support for Simplified Chinese, Traditional Chinese, English, Japanese, Korean, French, German, Spanish, Italian, Portuguese, Russian, Arabic, Hindi, Turkish, Dutch, and Polish. App menus, tooltips, pagination, and settings update immediately, and the selected language is saved locally. Unsupported system languages fall back to English; uncommon decoding errors may also appear in English. Filenames, paths, and text inside files remain unchanged.
 
-## Language settings
+## Keyboard and mouse
 
-Choose **LumaView → Language…**, also available in the More menu. The default follows the system language. The app supports 16 languages: Simplified Chinese, Traditional Chinese, English, Japanese, Korean, French, German, Spanish, Italian, Portuguese, Russian, Arabic, Hindi, Turkish, Dutch, and Polish.
-
-Menus, tooltips, page controls, and settings update immediately, and the choice is saved locally. Unsupported system languages fall back to English; some uncommon decoder errors may also appear in English. File names, paths, and text inside files are unchanged.
-
-## Keyboard and mouse reference
-
-| Action | Shortcut or gesture |
+| Action | Shortcut / gesture |
 | --- | --- |
-| Previous / next item in the focused row | `←` / `→`, or `J` / `K` |
-| Focus pages / files in a multi-page document | `↑` / `↓` |
-| First / last item in the focused row | `Home` / `End` |
+| Previous / next item (current focus) | `←` / `→`, or `J` / `K` |
+| Focus pages / files | `↑` / `↓` (multi-page documents) |
+| First / last item | `Home` / `End` |
 | Open files or a folder | `⌘O` |
 | Default application settings | `⌘,` |
 | Zoom | Wheel, trackpad pinch, `+` / `−`, `Page Up` / `Page Down` |
 | Temporarily switch wheel behavior | Hold `Ctrl` while scrolling |
-| Toggle 100% / fit to window | Click the image, or `1` |
+| 100% / fit to window | Click the image, or `1` |
 | Fit to window | `0` |
-| Pan a zoomed image or video | Drag the viewing area |
-| Rotate clockwise | `⌘R` / `Ctrl+R`; add `Shift` for counterclockwise |
-| Cycle backgrounds | **Space** |
-| Enter / leave fullscreen | `F` / `⌃⌘F` / `F11` when not reserved by macOS |
-| Play / pause current audio or video | `P` |
+| Pan a zoomed image or video | Drag the view |
+| Rotate view clockwise | `⌘R` / `Ctrl+R`; add `Shift` for counterclockwise |
+| Cycle backgrounds | Space |
+| Enter / leave fullscreen | `F` / `⌃⌘F` / `F11` (when not reserved by the system) |
+| Play / pause audio or video | `P` |
 | Stop media and return to the start | `S` |
 | Start / stop slideshow and continuous playback | `⌘4` |
-| Seek media backward / forward by 5 seconds | `Option+←` / `Option+→` |
+| Seek media backward / forward 5 seconds | `Option + ←` / `Option + →` |
 | Mute / unmute | `M` |
-| Copy current image, video frame, or document page | `⌘C` |
 | File information | `I` / `⌘I` |
-| Show / hide file filmstrip | `T` / `⌘T` |
+| Show / hide filmstrip | `T` / `⌘T` |
 | More options | `C` |
-| Show current file in Finder | `⌘Return` |
-| Pause playback, close information, leave fullscreen, or close the window, according to state | `Esc` |
+| Show the current file in Finder | `⌘Return` |
+| Pause playback, close information, exit fullscreen, close the window | `Esc`, handled in order according to current state |
 | Minimize / close / quit | `⌘M` / `⌘W` / `⌘Q` |
 
-`P` controls only the current audio/video, not the image slideshow. **Space changes the background; it is not play/pause.** The Help menu also includes an in-app keyboard and mouse guide.
+`P` controls only the current audio/video, not image slideshows. Help → Keyboard and Mouse also provides an in-app guide.
 
-## Format coverage, privacy, and limits
+## Coverage and limitations
 
-- Images use macOS ImageIO. Actual JPEG, PNG, GIF, HEIC, TIFF, BMP, WebP, RAW, and other support depends on the system version and file contents.
-- Very large images are no longer rejected solely for exceeding 150 megapixels. A bounded, downsampled preview may be used to control memory while retaining original dimensions and orientation. The 100% scale is calculated from the original dimensions, but zooming cannot recover details omitted from the decoded preview.
-- PSD/PSB displays the composite saved by Photoshop, without layer editing. Very large canvases receive a preview within the memory budget. See [FORMATS.md](../../FORMATS.md) for color-mode, bit-depth, and compression coverage.
-- Vector viewing supports SVG, PDF, PDF-compatible AI, and supported EPS/PS/legacy AI through the bundled interpreter. Missing nonembedded fonts may be substituted. Embedded bitmaps remain constrained by their original resolution.
-- PostScript runs in a separate process with SAFER and a system sandbox, restricted to the staged input/output and denied network access. It is cancellable on file changes; thumbnails and the main view share completed conversions. Each interpretation is limited to 90 seconds and 1 GB of output, with a cache cleanup target of 2 GB.
-- Native and fallback media decoding do not guarantee every codec. DRM-protected, damaged, or proprietary unsupported files may fail. An extension does not guarantee the internal codec is decodable, and not every format, device, or OS version has been tested.
-- The compatibility playback cache has a 2 GB cleanup target; active files may temporarily exceed it. A prepared file is limited to 8 GB, with at least 512 MB of free disk space reserved. Preparation stops with a message if space is insufficient.
-- TIFF supports multiple pages. Other compound image formats without implemented page navigation show their first image. Viewing rotations never write back to the original.
-- LumaView does not provide editing, deletion, layer editing, a photo-library database, sharing, cloud synchronization, or external subtitle management.
-- The app reads local media opened by the user and its containing folder. Compatibility preparation writes local cache files. It does not upload media or modify the original files.
+- Images use system ImageIO decoding. Actual support for JPEG, PNG, GIF, HEIC, TIFF, BMP, WebP, RAW, and other formats depends on the system version and file contents.
+- Very large images are no longer rejected solely for exceeding 150 megapixels. To limit memory, previews may be downsampled while preserving original dimensions and orientation metadata. 100% zoom is still calculated from original dimensions, but cannot recover pixel detail omitted from the preview decoding.
+- Vector display supports SVG, PDF, PDF-compatible AI, and EPS / PS / legacy AI processed by the bundled interpreter. Multi-page PDF / AI / PS supports navigation; SVG rejects scripts and external resources. Embedded bitmaps retain their original resolution limits, and unavailable nonembedded fonts may be substituted.
+- PostScript runs in a separate process with SAFER and a system sandbox, allowing only the staged input and output and denying network access. Rapid file changes can cancel it; thumbnails and the main view share completed cached results. Each interpretation is limited to 90 seconds and 1 GB of output, with a cache cleanup target of 2 GB.
+- Photoshop PSD / PSB shows the composite saved in the file, without layer editing. Very large canvases use memory-budgeted previews and retain original dimensions; see FORMATS.md for supported color modes, bit depths, and compression.
+- Bundled fallback decoding expands audio/video coverage, but DRM, damaged files, and proprietary encodings without an available decoder may still fail. An extension does not guarantee that the internal encoding can be decoded. Not every format, device, or system version has been individually tested.
+- The compatibility cache has a 2 GB cleanup target; active files can temporarily exceed it. A single prepared file is limited to 8 GB, with at least 512 MB of free disk space reserved. Preparation stops and displays a message if space is insufficient.
+- TIFF supports multiple pages; other compound image formats without implemented pagination show the first image. Viewing rotation never writes back to originals. Editing, deletion, a library database, sharing, cloud synchronization, and external subtitle management are not provided.
+- The app reads only local media opened by the user and its containing folder. Compatibility playback writes to a local cache; it does not upload media or modify originals.
 
-Additional format examples and cache/preview boundaries are documented in [FORMATS.md](../../FORMATS.md), in Chinese.
+See [FORMATS.md](../i18n/en/FORMATS.md) for more format examples and cache / preview boundaries.
 
 ## Build from source
 
-Requires Xcode or Command Line Tools with the Swift compiler. The repository and source package include universal Intel/Apple Silicon media tools, so a normal app build does not require separately installing or downloading third-party dependencies. Use the repository root containing `build.sh`; the original development workspace layout is not needed.
-
-Run these commands **from the repository root**, not `docs/readme`:
+Requires Xcode or Command Line Tools with the Swift compiler. The repository and source package include universal Intel / Apple Silicon media tools, so a normal build requires no separate third-party installation or download. After cloning or downloading, build from the repository root containing `build.sh`; the original development workspace layout is not required.
 
 ```bash
+cd /path/to/LumaView
 ./build.sh
 open ../LumaView.app
 ```
 
-The default build produces a universal app. `./build.sh --host` builds only the current Mac architecture. The app is written beside the repository as `../LumaView.app` by default; set `LUMAVIEW_APP_PATH` to choose another destination. Build and test working files default to `.build/` inside the repository; set `LUMAVIEW_WORK_ROOT` to change that location. Generated files are excluded by `.gitignore`.
+The default produces a universal app; `./build.sh --host` builds only the current Mac architecture. The app is placed beside the source directory as `LumaView.app` by default; set `LUMAVIEW_APP_PATH` for another destination. Build and test working files default to `.build/` inside the repository and can be relocated with `LUMAVIEW_WORK_ROOT`. These generated files are excluded by `.gitignore`.
 
-Use `LUMAVIEW_TEST_BUILD=1 ./build.sh --host` for a separate **LumaView Tests** app. This app does not declare file-opening associations, preventing a test copy from competing with the installed app. UI test scripts use this mode by default; `LUMAVIEW_SKIP_TEST_BUILD=1` and `LUMAVIEW_TEST_APP_PATH` can select an already-built test app.
+Test builds use `LUMAVIEW_TEST_BUILD=1 ./build.sh --host` to create a separate LumaView Tests app without file-opening declarations, preventing test copies from competing with the installed app. UI test scripts use this mode by default. Use `LUMAVIEW_SKIP_TEST_BUILD=1` and `LUMAVIEW_TEST_APP_PATH` to select an already-built app.
 
-FFmpeg is built under LGPL 2.1 or later; statically linked dav1d uses the BSD 2-Clause license. Corresponding source archives, checksums, and licenses are included. Rebuilding the media tools requires Xcode Command Line Tools, Python 3, Meson 1.12.1, and Ninja 1.13.2. Install the Python tools in a virtual environment if needed, then run `./tools/build-media-tools.sh`. See [ThirdParty/README.md](../../ThirdParty/README.md) for instructions and configuration.
+FFmpeg is built under LGPL 2.1 or later, and statically linked dav1d uses BSD 2-Clause. Corresponding source archives, checksums, and licenses accompany the source package. Rebuilding the media tools requires Xcode Command Line Tools, Python 3, Meson 1.12.1, and Ninja 1.13.2; install the Python tools in a virtual environment and run `./tools/build-media-tools.sh`. See [ThirdParty/README.md](../i18n/en/ThirdParty/README.md) for steps and build configuration. PostScript uses a separate Ghostscript 10.08.0 executable (AGPL-3.0-or-later), with its license, complete corresponding source, and build script included. Normal app builds use the bundled universal component; see the [Ghostscript guide](../i18n/en/ThirdParty/README-Ghostscript.md) for rebuilding.
 
-PostScript uses the separate **Ghostscript 10.08.0** executable under AGPL-3.0-or-later. Its license, complete corresponding source, and build script are included. Normal app builds use the bundled universal component; see the [Ghostscript documentation](../../ThirdParty/README-Ghostscript.md) to rebuild it.
+## Source and validation
 
-## Source layout and validation
-
-- [`Sources/`](../../Sources/): AppKit UI, media canvas, raster/vector loading, media lifecycle, compatibility preparation, and default application settings.
-- [`Resources/Localizations/`](../../Resources/Localizations/): language strings and the core translation key list.
-- [`Resources/MediaFormats.json`](../../Resources/MediaFormats.json): format catalog.
-- [`Resources/MediaTools/`](../../Resources/MediaTools/): bundled FFmpeg and ffprobe.
-- [`ThirdParty/sources/`](../../ThirdParty/sources/) and [`Resources/ThirdPartyNotices/`](../../Resources/ThirdPartyNotices/): corresponding third-party sources and licenses.
-- [`build.sh`](../../build.sh): universal compilation, packaging, and local signing; [`tools/build-media-tools.sh`](../../tools/build-media-tools.sh): media-tool rebuilding.
-
-Run test scripts from the **repository root**:
+- `Sources/`: AppKit interface, media canvas, raster and vector loading, audio/video lifecycle, compatibility preparation, and default application settings.
+- `Resources/Localizations/`: language strings and the core translation key list.
+- `Resources/MediaFormats.json`: format catalog; `Resources/MediaTools/`: bundled FFmpeg / ffprobe.
+- `ThirdParty/sources/`, `Resources/ThirdPartyNotices/`: corresponding media-tool sources and licenses.
+- `build.sh`: universal app compilation, packaging, and local signing; `tools/build-media-tools.sh`: rebuilding media tools.
 
 ```bash
 ./Tests/run-core-tests.sh
@@ -175,10 +162,8 @@ Run test scripts from the **repository root**:
 ./Tests/run-localization-tests.sh
 ```
 
-Audio decoding unit tests generate MP3/FLAC/Opus samples and require a development FFmpeg with the corresponding encoders; set `LUMAVIEW_TEST_FFMPEG` to its path. Running the app and its audio UI tests uses only the bundled tools.
+Audio decoding unit tests need a development FFmpeg with the relevant encoders to generate MP3 / FLAC / Opus samples. Set `LUMAVIEW_TEST_FFMPEG` to its path. The app and audio interface tests use only bundled components.
 
-UI integration checks require a logged-in macOS graphical desktop. They open the app and exercise interactions using generated media. Build files and saved reports default to `.build/`; some temporary media uses the system temporary directory. Tests do not read personal photos by default. Context-menu copy tests use a separately named clipboard without replacing the user's current clipboard. Open With, Finder, and default-application tests use mocks without changing system associations.
+UI integration checks require a logged-in macOS graphical desktop. They open the app and check interactions using generated media. Build files and saved test reports default to `.build/`; some runtime fixtures use the system temporary directory. Tests do not read personal photos by default. Context-menu copying tests use a separate named clipboard without replacing the user's current clipboard. Open With / Finder / default-application tests use mocks and do not change file associations. See [TEST-RESULTS.txt](../i18n/en/TEST-RESULTS.md) for the delivered version's validation record.
 
-See the release's [validation record](../../TEST-RESULTS.txt). Version 1.7.2 was tested on **macOS 15.7.9 / Intel**. Universal binaries and signatures were checked, but this release's validation did **not include running on Apple Silicon hardware**.
-
-Saved reports in [`Tests/`](../../Tests/) document their respective historical versions; they do not mean tests have automatically passed on a fresh checkout or the current machine. Personal sample names have been anonymized, and original personal media is not included. Historical `work/` paths record where tests ran at the time and are not required build directories. The repository includes corresponding third-party source archives, checksums, and licenses, making the initial clone larger.
+Saved reports in `Tests/` are historical records for their respective versions, not evidence that a fresh checkout has automatically passed tests in the current environment. Personal sample names are anonymized, and original media is not included in the repository. Historical `work/` paths record the test sources at that time and are not required directories for current builds. The repository preserves corresponding third-party source archives, checksums, and licenses, so the initial clone is relatively large.

@@ -1,0 +1,16 @@
+# Sprachen der LumaView-Benutzeroberfläche
+
+<!-- doc-navigation:start -->
+[Dokumentation](../../INDEX.md) · [简体中文](../../../zh-Hans/Resources/Localizations/README.md) · [繁體中文](../../../zh-Hant/Resources/Localizations/README.md) · [English](../../../en/Resources/Localizations/README.md) · [日本語](../../../ja/Resources/Localizations/README.md) · [한국어](../../../ko/Resources/Localizations/README.md) · [Français](../../../fr/Resources/Localizations/README.md) · **Deutsch** · [Español](../../../es/Resources/Localizations/README.md) · [Italiano](../../../it/Resources/Localizations/README.md) · [Português (Brasil)](../../../pt-BR/Resources/Localizations/README.md) · [Русский](../../../ru/Resources/Localizations/README.md) · [العربية](../../../ar/Resources/Localizations/README.md) · [हिन्दी](../../../hi/Resources/Localizations/README.md) · [Türkçe](../../../tr/Resources/Localizations/README.md) · [Nederlands](../../../nl/Resources/Localizations/README.md) · [Polski](../../../pl/Resources/Localizations/README.md)
+<!-- doc-navigation:end -->
+
+
+Die App startet mit **Systemsprache verwenden**. Es wählt die erste unterstützte Sprache in der Liste der bevorzugten Sprachen von macOS und dann Englisch, wenn keine unterstützt wird. Eine unter **LumaView → Sprache…** ausgewählte Sprache wird sofort wirksam und nur für diese App gespeichert.
+
+Unterstützte Optionen: Vereinfachtes Chinesisch, traditionelles Chinesisch, Englisch, Japanisch, Koreanisch, Französisch, Deutsch, Spanisch, Italienisch, Portugiesisch, Russisch, Arabisch, Hindi, Türkisch, Niederländisch und Polnisch. Portugiesische Varianten verwenden derzeit den brasilianischen portugiesischen Katalog. Die nativen Namen in der Auswahl sind beabsichtigt, damit Benutzer auch in einer unbekannten Oberflächensprache wieder ihre Sprache finden.
+
+`catalog.json` ordnet lesbare vereinfachte chinesische Quellschlüssel lokalisierten Zeichenfolgen zu. `core-keys.json` definiert die allgemeinen Steuerelemente, Menüs, Einstellungen, Dokumentnavigation, Metadatenbeschriftungen und Tastaturhilfezeichenfolgen, die in jedem Katalog erforderlich sind. Seltene Diagnosemeldungen verwenden den englischen Fallback, wenn eine Sprache keinen eigenen Eintrag hat. Namen von Dateien, Verzeichnissen, Codecs, Formaten und eingebetteten Kamerametadaten bleiben unverändert. Das Betriebssystem stellt nativen Systemdialogtext in seiner eigenen Sprache bereit.
+
+Verwenden Sie `L10n.tr("source key")` für statischen Text. Verwenden Sie für dynamischen Text `L10n.format("第 %d / %d 页", current, total)`, anstatt vor der Übersetzung eine chinesische Zeichenfolge zu interpolieren. Halten Sie die Platzhaltertypen und -anzahlen in allen Übersetzungen konsistent. Beobachten Sie `L10n.languageDidChange`, um vorhandene Schnittstellen zu aktualisieren und gerenderten Text neu zu zeichnen. Die Tests verwenden `useLanguageForTesting`, um eine Änderung der gespeicherten Sprache des Benutzers zu vermeiden.
+
+Führen Sie `Tests/run-localization-tests.sh` aus, um die Auflösung des Gebietsschemas, die vollständige Kernabdeckung, die Konsistenz von Format-Platzhaltern, das Fallback-Verhalten und die Richtung des arabischen Textes zu erhalten. Der übersetzte Text wurde keiner professionellen sprachlichen Überprüfung unterzogen.

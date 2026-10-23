@@ -1,5 +1,10 @@
 # Ghostscript document conversion tool
 
+<!-- full-translation:start -->
+[简体中文](../docs/i18n/zh-Hans/ThirdParty/README-Ghostscript.md) · [繁體中文](../docs/i18n/zh-Hant/ThirdParty/README-Ghostscript.md) · [English](../docs/i18n/en/ThirdParty/README-Ghostscript.md) · [日本語](../docs/i18n/ja/ThirdParty/README-Ghostscript.md) · [한국어](../docs/i18n/ko/ThirdParty/README-Ghostscript.md) · [Français](../docs/i18n/fr/ThirdParty/README-Ghostscript.md) · [Deutsch](../docs/i18n/de/ThirdParty/README-Ghostscript.md) · [Español](../docs/i18n/es/ThirdParty/README-Ghostscript.md) · [Italiano](../docs/i18n/it/ThirdParty/README-Ghostscript.md) · [Português (Brasil)](../docs/i18n/pt-BR/ThirdParty/README-Ghostscript.md) · [Русский](../docs/i18n/ru/ThirdParty/README-Ghostscript.md) · [العربية](../docs/i18n/ar/ThirdParty/README-Ghostscript.md) · [हिन्दी](../docs/i18n/hi/ThirdParty/README-Ghostscript.md) · [Türkçe](../docs/i18n/tr/ThirdParty/README-Ghostscript.md) · [Nederlands](../docs/i18n/nl/ThirdParty/README-Ghostscript.md) · [Polski](../docs/i18n/pl/ThirdParty/README-Ghostscript.md)
+<!-- full-translation:end -->
+
+
 LumaView invokes Ghostscript **10.08.0**, released by Artifex on 2026-09-08, as a separate local executable to convert EPS and PostScript into a temporary PDF. The PDF output retains supported vector paths, text and gradients. Images already embedded as raster pixels remain raster images. Ghostscript is not linked into the Swift application, and no Homebrew installation is required to run this bundled executable.
 
 ## License and corresponding source

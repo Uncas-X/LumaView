@@ -1,5 +1,9 @@
 > 历史验证记录中的个人样本文件名已匿名化；测试数据与结果保持原样。
 
+<!-- full-translation:start -->
+[简体中文](../docs/i18n/zh-Hans/Tests/Release-1.7.1.md) · [繁體中文](../docs/i18n/zh-Hant/Tests/Release-1.7.1.md) · [English](../docs/i18n/en/Tests/Release-1.7.1.md) · [日本語](../docs/i18n/ja/Tests/Release-1.7.1.md) · [한국어](../docs/i18n/ko/Tests/Release-1.7.1.md) · [Français](../docs/i18n/fr/Tests/Release-1.7.1.md) · [Deutsch](../docs/i18n/de/Tests/Release-1.7.1.md) · [Español](../docs/i18n/es/Tests/Release-1.7.1.md) · [Italiano](../docs/i18n/it/Tests/Release-1.7.1.md) · [Português (Brasil)](../docs/i18n/pt-BR/Tests/Release-1.7.1.md) · [Русский](../docs/i18n/ru/Tests/Release-1.7.1.md) · [العربية](../docs/i18n/ar/Tests/Release-1.7.1.md) · [हिन्दी](../docs/i18n/hi/Tests/Release-1.7.1.md) · [Türkçe](../docs/i18n/tr/Tests/Release-1.7.1.md) · [Nederlands](../docs/i18n/nl/Tests/Release-1.7.1.md) · [Polski](../docs/i18n/pl/Tests/Release-1.7.1.md)
+<!-- full-translation:end -->
+
 # LumaView 1.7.1 验证记录
 
 版本 1.7.1，build 13。2026-10-22，macOS 15.7.9 / Intel。应用及三个内置工具通过 arm64 + x86_64 架构与本地签名核验；本轮未在 Apple Silicon 硬件运行。

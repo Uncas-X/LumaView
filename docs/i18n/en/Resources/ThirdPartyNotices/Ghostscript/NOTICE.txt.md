@@ -1,0 +1,37 @@
+Ghostscript 10.08.0 (2026-09-08)
+
+<!-- doc-navigation:start -->
+[Documentation](../../../INDEX.md) · [简体中文](../../../../zh-Hans/Resources/ThirdPartyNotices/Ghostscript/NOTICE.txt.md) · [繁體中文](../../../../zh-Hant/Resources/ThirdPartyNotices/Ghostscript/NOTICE.txt.md) · **English** · [日本語](../../../../ja/Resources/ThirdPartyNotices/Ghostscript/NOTICE.txt.md) · [한국어](../../../../ko/Resources/ThirdPartyNotices/Ghostscript/NOTICE.txt.md) · [Français](../../../../fr/Resources/ThirdPartyNotices/Ghostscript/NOTICE.txt.md) · [Deutsch](../../../../de/Resources/ThirdPartyNotices/Ghostscript/NOTICE.txt.md) · [Español](../../../../es/Resources/ThirdPartyNotices/Ghostscript/NOTICE.txt.md) · [Italiano](../../../../it/Resources/ThirdPartyNotices/Ghostscript/NOTICE.txt.md) · [Português (Brasil)](../../../../pt-BR/Resources/ThirdPartyNotices/Ghostscript/NOTICE.txt.md) · [Русский](../../../../ru/Resources/ThirdPartyNotices/Ghostscript/NOTICE.txt.md) · [العربية](../../../../ar/Resources/ThirdPartyNotices/Ghostscript/NOTICE.txt.md) · [हिन्दी](../../../../hi/Resources/ThirdPartyNotices/Ghostscript/NOTICE.txt.md) · [Türkçe](../../../../tr/Resources/ThirdPartyNotices/Ghostscript/NOTICE.txt.md) · [Nederlands](../../../../nl/Resources/ThirdPartyNotices/Ghostscript/NOTICE.txt.md) · [Polski](../../../../pl/Resources/ThirdPartyNotices/Ghostscript/NOTICE.txt.md)
+<!-- doc-navigation:end -->
+
+Copyright (C) 2026 Artifex Software, Inc. All rights reserved.
+
+This separate executable is supplied under GNU AGPL version 3 or later,
+without warranty. See Ghostscript-LICENSE.txt and AGPL-3.0.txt. The source
+release's font embedding exception is preserved in Ghostscript-LICENSE.txt.
+The complete, unmodified corresponding source release and build script are
+included in the accompanying LumaView source package:
+
+  ThirdParty/sources/ghostscript-10.08.0.tar.xz
+  ThirdParty/sources/SHA256SUMS-Ghostscript
+  ThirdParty/README-Ghostscript.md
+  tools/build-document-tools.sh
+
+Source SHA-256:
+c20492bc8ebb96c87fa2e52a0926e1cda8cde95d66145e018ac713fed5da38cf
+
+Official source:
+https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/tag/gs10080
+
+This software is based in part on the work of the Independent JPEG Group.
+This software uses the FreeType library; see the included FreeType notices.
+Bundled source dependencies include zlib, Brotli, Little CMS, JBIG2dec,
+OpenJPEG, libtiff and libpng. Their original license notices are reproduced
+in this directory. Adobe CMap copyright and redistribution notices are
+preserved in Adobe-CMap-Copyrights.txt; original per-file notices also remain
+in the corresponding source archive.
+
+The interpreter is invoked as a separate process. The build uses internal
+ROM resources and system libSystem only; it does not require a separate
+Ghostscript, fontconfig or Homebrew installation. No source-code patches
+are applied. Full configuration options are in the accompanying build script.

@@ -1,5 +1,10 @@
 # Bundled media tools
 
+<!-- full-translation:start -->
+[简体中文](../docs/i18n/zh-Hans/ThirdParty/README.md) · [繁體中文](../docs/i18n/zh-Hant/ThirdParty/README.md) · [English](../docs/i18n/en/ThirdParty/README.md) · [日本語](../docs/i18n/ja/ThirdParty/README.md) · [한국어](../docs/i18n/ko/ThirdParty/README.md) · [Français](../docs/i18n/fr/ThirdParty/README.md) · [Deutsch](../docs/i18n/de/ThirdParty/README.md) · [Español](../docs/i18n/es/ThirdParty/README.md) · [Italiano](../docs/i18n/it/ThirdParty/README.md) · [Português (Brasil)](../docs/i18n/pt-BR/ThirdParty/README.md) · [Русский](../docs/i18n/ru/ThirdParty/README.md) · [العربية](../docs/i18n/ar/ThirdParty/README.md) · [हिन्दी](../docs/i18n/hi/ThirdParty/README.md) · [Türkçe](../docs/i18n/tr/ThirdParty/README.md) · [Nederlands](../docs/i18n/nl/ThirdParty/README.md) · [Polski](../docs/i18n/pl/ThirdParty/README.md)
+<!-- full-translation:end -->
+
+
 LumaView invokes unmodified FFmpeg 9.0.2 and ffprobe as separate local processes. These are built from source for Intel and Apple Silicon, targeting macOS 13. They use statically linked dav1d 1.5.3 for AV1 decoding and only system dynamic libraries. Homebrew and VLC are not required at runtime.
 
 FFmpeg is configured under LGPL 2.1 or later, without `--enable-gpl` or `--enable-nonfree`. dav1d uses the BSD 2-Clause license. Full license notices are in `Resources/ThirdPartyNotices` and are copied into the application bundle. The exact, unmodified corresponding source archives are included in `sources/`, with SHA-256 checksums. All configuration flags and build steps are in `tools/build-media-tools.sh`. LumaView places no additional restriction on modification or replacement of these separate tools, or reverse engineering needed to debug such modifications.

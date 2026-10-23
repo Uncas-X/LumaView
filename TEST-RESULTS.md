@@ -1,5 +1,10 @@
 # LumaView 1.7.2 验证记录
 
+<!-- full-translation:start -->
+[简体中文](docs/i18n/zh-Hans/TEST-RESULTS.md) · [繁體中文](docs/i18n/zh-Hant/TEST-RESULTS.md) · [English](docs/i18n/en/TEST-RESULTS.md) · [日本語](docs/i18n/ja/TEST-RESULTS.md) · [한국어](docs/i18n/ko/TEST-RESULTS.md) · [Français](docs/i18n/fr/TEST-RESULTS.md) · [Deutsch](docs/i18n/de/TEST-RESULTS.md) · [Español](docs/i18n/es/TEST-RESULTS.md) · [Italiano](docs/i18n/it/TEST-RESULTS.md) · [Português (Brasil)](docs/i18n/pt-BR/TEST-RESULTS.md) · [Русский](docs/i18n/ru/TEST-RESULTS.md) · [العربية](docs/i18n/ar/TEST-RESULTS.md) · [हिन्दी](docs/i18n/hi/TEST-RESULTS.md) · [Türkçe](docs/i18n/tr/TEST-RESULTS.md) · [Nederlands](docs/i18n/nl/TEST-RESULTS.md) · [Polski](docs/i18n/pl/TEST-RESULTS.md)
+<!-- full-translation:end -->
+
+
 版本 1.7.2，build 14。2026-10-22，macOS 15.7.9 / Intel。应用与内置工具通过 arm64 + x86_64 通用架构与本地签名核验；本轮未在 Apple Silicon 硬件运行。
 
 ## 本次修复

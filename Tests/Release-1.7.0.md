@@ -1,5 +1,9 @@
 > 历史验证记录中的个人样本文件名已匿名化；测试数据与结果保持原样。
 
+<!-- full-translation:start -->
+[简体中文](../docs/i18n/zh-Hans/Tests/Release-1.7.0.md) · [繁體中文](../docs/i18n/zh-Hant/Tests/Release-1.7.0.md) · [English](../docs/i18n/en/Tests/Release-1.7.0.md) · [日本語](../docs/i18n/ja/Tests/Release-1.7.0.md) · [한국어](../docs/i18n/ko/Tests/Release-1.7.0.md) · [Français](../docs/i18n/fr/Tests/Release-1.7.0.md) · [Deutsch](../docs/i18n/de/Tests/Release-1.7.0.md) · [Español](../docs/i18n/es/Tests/Release-1.7.0.md) · [Italiano](../docs/i18n/it/Tests/Release-1.7.0.md) · [Português (Brasil)](../docs/i18n/pt-BR/Tests/Release-1.7.0.md) · [Русский](../docs/i18n/ru/Tests/Release-1.7.0.md) · [العربية](../docs/i18n/ar/Tests/Release-1.7.0.md) · [हिन्दी](../docs/i18n/hi/Tests/Release-1.7.0.md) · [Türkçe](../docs/i18n/tr/Tests/Release-1.7.0.md) · [Nederlands](../docs/i18n/nl/Tests/Release-1.7.0.md) · [Polski](../docs/i18n/pl/Tests/Release-1.7.0.md)
+<!-- full-translation:end -->
+
 # LumaView 1.7.0 验证记录
 
 日期：2026-10-22（Asia/Shanghai）。本轮运行环境：macOS 15.7.9、x86_64。应用目标为 macOS 13+，四个可执行文件均为 Intel / Apple Silicon 通用版。
@@ -54,7 +58,7 @@
 
 ## 范围与边界
 
-EPS / PS 中原本嵌入的位图仍受其自身分辨率限制；外部字体或文件资源、特殊或损坏 PostScript 内容不保证能够完整转换。PSD / PSB 预览依赖文件中的兼容合成图，不执行 Photoshop 图层编辑或重建缺失合成图；缺失时提示启用“最大兼容性”后重新保存。原始画布尺寸可大于实际显示预览尺寸，不将有界预览宣称为所有源像素都已完整解码。其他格式边界见 [FORMATS.md](FORMATS.md)。
+EPS / PS 中原本嵌入的位图仍受其自身分辨率限制；外部字体或文件资源、特殊或损坏 PostScript 内容不保证能够完整转换。PSD / PSB 预览依赖文件中的兼容合成图，不执行 Photoshop 图层编辑或重建缺失合成图；缺失时提示启用“最大兼容性”后重新保存。原始画布尺寸可大于实际显示预览尺寸，不将有界预览宣称为所有源像素都已完整解码。其他格式边界见 [FORMATS.md](../FORMATS.md)。
 
 ## 本轮日志来源
 

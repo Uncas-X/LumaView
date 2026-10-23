@@ -4,7 +4,7 @@
 **简体中文** · [English](docs/readme/README.en.md) · [繁體中文](docs/readme/README.zh-Hant.md) · [日本語](docs/readme/README.ja.md) · [한국어](docs/readme/README.ko.md) · [Français](docs/readme/README.fr.md) · [Deutsch](docs/readme/README.de.md) · [Español](docs/readme/README.es.md) · [Italiano](docs/readme/README.it.md) · [Português (Brasil)](docs/readme/README.pt-BR.md) · [Русский](docs/readme/README.ru.md) · [العربية](docs/readme/README.ar.md) · [हिन्दी](docs/readme/README.hi.md) · [Türkçe](docs/readme/README.tr.md) · [Nederlands](docs/readme/README.nl.md) · [Polski](docs/readme/README.pl.md)
 <!-- language-navigation:end -->
 
-**[下载 macOS 应用](https://github.com/Uncas-X/LumaView/releases/latest/download/LumaView-macOS.zip)** · [版本与更新说明](https://github.com/Uncas-X/LumaView/releases)
+**[下载 macOS 应用](https://github.com/Uncas-X/LumaView/releases/latest/download/LumaView-macOS.zip)** · [版本与更新说明](https://github.com/Uncas-X/LumaView/releases) · [完整文档目录](docs/i18n/zh-Hans/INDEX.md)
 
 支持 macOS 13+，同一个安装包兼容 Intel 与 Apple Silicon。下载 ZIP 后解压，将 `LumaView.app` 拖入“应用程序”即可安装。
 
@@ -163,6 +163,6 @@ FFmpeg 按 LGPL 2.1 或更新版本构建，静态链接的 dav1d 使用 BSD 2-C
 
 音频解码单测为构造 MP3 / FLAC / Opus 样本，需要支持相应编码器的开发版 FFmpeg，可通过 `LUMAVIEW_TEST_FFMPEG` 指定路径；应用运行及音频界面测试只使用随包组件。
 
-界面集成检查需要登录 macOS 图形桌面，会打开应用并使用自动生成的媒体检查交互。构建文件和保存的测试报告默认位于 `.build/`，部分运行素材使用系统临时目录；测试默认不会读取个人照片。右键复制测试使用独立命名剪贴板，不覆盖用户当前复制内容；打开方式 / Finder / 默认应用测试使用模拟接口，不改动文件关联。交付版本的验证记录见 [TEST-RESULTS.txt](TEST-RESULTS.txt)。
+界面集成检查需要登录 macOS 图形桌面，会打开应用并使用自动生成的媒体检查交互。构建文件和保存的测试报告默认位于 `.build/`，部分运行素材使用系统临时目录；测试默认不会读取个人照片。右键复制测试使用独立命名剪贴板，不覆盖用户当前复制内容；打开方式 / Finder / 默认应用测试使用模拟接口，不改动文件关联。交付版本的验证记录见 [TEST-RESULTS.md](TEST-RESULTS.md)。
 
 `Tests/` 中的已保存报告是对应版本的历史验证记录，不代表克隆后的当前环境已自动通过测试；其中个人样本文件名已匿名化，原始媒体未纳入仓库。历史报告中的 `work/` 路径用于记录当时的测试来源，不是当前构建的必需目录。仓库保留第三方工具的对应源码归档、校验值和许可证，因此首次克隆体积较大。
